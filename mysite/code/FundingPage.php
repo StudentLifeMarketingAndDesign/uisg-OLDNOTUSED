@@ -16,11 +16,14 @@ class FundingPage extends Page {
 $fields->removeFieldFromTab("Root.Content.Main","Content");		
 	
 		$domfield = new DataObjectManager(
-			$this,
-			'FundingDeadline',
-			'FundingDeadline',
-			array('DeadlineTitle'=>'Deadline Title','Deadline' => 'Deadline'),
-			'getCMSFields_forPopup'
+			$controller = $this,
+			$name = 'FundingDeadline',
+			$sourceClass = 'FundingDeadline',
+			$fieldList = array('DeadlineTitle'=>'Deadline Title','Deadline' => 'Deadline'),
+			$detailFormFields = 'getCMSFields_forPopup',
+			$sourceFilter = null,
+			$sourceSort = 'Deadline DESC'
+	
 		);		
 
 		
@@ -41,9 +44,10 @@ class FundingPage_Controller extends Page_Controller {
 	);
 	
 	public function NextDeadline(){
-		$deadlines =  DataObject::get("FundingDeadline", $filter, $sort = "Deadline ASC", $join, $limit = 1);
+		$deadlines =  DataObject::get("FundingDeadline", $filter = null, $sort = "Deadline DESC", $join = null, $limit = 1);
 		$next_deadline = $deadlines->First();
 		
+		print_r($next_deadline);
 		
 		$target = strtotime($next_deadline->Deadline);
 		$today = time() ;
