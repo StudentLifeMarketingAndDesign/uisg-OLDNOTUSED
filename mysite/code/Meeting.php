@@ -4,6 +4,7 @@ class Meeting extends DataObject {
 	public static $db = array(
 		"Title" => "Varchar(255)",
 		"Date" => "Date",
+		"Time" => "Text",
 		"Type" => "Text",
 		"Notes" => "HTMLText"
 	
@@ -21,9 +22,10 @@ class Meeting extends DataObject {
 	
 		$meetingTypes = array ("General Senate Meeting" => "General Senate Meeting", "Committee Meeting" => "Committee Meeting");
 		return new FieldSet(
-			new TextField("Title","Title of the Meeting"),
 			$date_field,
+			new TextField("Time","Time of the Meeting"),
 			new DropdownField("Type","Type of the Meeting", $meetingTypes),
+			new TextField("Title","Title of the Meeting (optional)"),
 			new SimpleTinyMCEField("Notes", "Meeting Notes")
 			
 		);

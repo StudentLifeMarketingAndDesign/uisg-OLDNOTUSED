@@ -27,7 +27,7 @@ class LegislativeBranchPage extends BranchPage {
 			$controller = $this,
 			$name = 'Meetings',
 			$sourceClass = 'Meeting',
-			$fieldList = array('Title'=>'Title','Type' => 'Type', 'Date' => 'Date'),
+			$fieldList = array( 'Date' => 'Date','Title'=>'Title','Type' => 'Type'),
 			$detailFormFields = 'getCMSFields_forPopup',
 			$sourceFilter = null,
 			$sourceSort = 'Date DESC'
@@ -37,7 +37,7 @@ class LegislativeBranchPage extends BranchPage {
 		
 		$fields->addFieldToTab('Root.Content.Meetings', $domfield);
 
-		$fields->removeFieldFromTab('Root.Content.Main', 'Content');
+		//$fields->removeFieldFromTab('Root.Content.Main', 'Content');
 		$fields->addFieldToTab('Root.Content.Meetings', new HTMLEditorField('SenateMeetingsContent','Senate Meetings Content'));
 		$fields->addFieldToTab('Root.Content.Meetings', new HTMLEditorField('CommitteeMeetingsContent','Committee Meetings Content'));
 		//$fields->addFieldToTab('Root.Content.Main', new ImageField('Image','Slider Image'));

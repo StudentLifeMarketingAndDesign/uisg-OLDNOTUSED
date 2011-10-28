@@ -32,8 +32,6 @@
 						<li>$Title</li>
 					<% end_if %>
 					
-					
-					
 				<% end_control %>
 			</ul>
 		<% end_if %>
