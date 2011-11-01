@@ -47,7 +47,7 @@ class FundingPage_Controller extends Page_Controller {
 		$deadlines =  DataObject::get("FundingDeadline", $filter = null, $sort = "Deadline DESC", $join = null, $limit = 1);
 		$next_deadline = $deadlines->First();
 		
-		print_r($next_deadline);
+		//print_r($next_deadline);
 		
 		$target = strtotime($next_deadline->Deadline);
 		$today = time() ;

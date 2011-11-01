@@ -27,7 +27,7 @@ class LegislativeBranchPage extends BranchPage {
 			$controller = $this,
 			$name = 'Meetings',
 			$sourceClass = 'Meeting',
-			$fieldList = array( 'Date' => 'Date','Title'=>'Title','Type' => 'Type'),
+			$fieldList = array( 'Date' => 'Date','Type' => 'Type'),
 			$detailFormFields = 'getCMSFields_forPopup',
 			$sourceFilter = null,
 			$sourceSort = 'Date DESC'
@@ -78,10 +78,11 @@ class LegislativeBranchPage_Controller extends BranchPage_Controller {
         else
         {
         
+        	
         	$Data = array(
                 'AllMeetings' => DataObject::get("Meeting"),
-                'SenateMeetings' => DataObject::get("Meeting", "Type = 'General Senate Meeting'"),
-                'CommitteeMeetings' => DataObject::get("Meeting", "Type = 'Committee Meeting'"),
+                'SenateMeetings' => DataObject::get("Meeting", "Type = 'General Senate Meeting'", "Date ASC"),
+                'CommitteeMeetings' => DataObject::get("Meeting", "Type = 'Committee Meeting'", "Date ASC"),
 
             );
             //Staff member not found

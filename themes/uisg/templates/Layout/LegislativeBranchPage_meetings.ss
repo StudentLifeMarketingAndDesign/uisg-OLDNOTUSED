@@ -5,8 +5,11 @@
 	<div id="content1">
 	<p><a href="$Link">Back to the Legislative Branch</a></p>
 	<% if Meeting %>
-		<h1>$Meeting.Title</h1>
-		$Meeting.Notes
+	<p><a href="{$Link}/meetings/">Back to Meetings</a></p>
+		<% control Meeting %>
+			<h1>Meeting Notes for $Date.Format(F d)</h1>
+			$Notes
+		<% end_control %>
 	<% else %>
 		<h1>Meetings</h1>
 		
@@ -15,7 +18,12 @@
 				$SenateMeetingsContent
 			<ul class="meetings">
 				<% control SenateMeetings %>
-					<li><a href="$Link">$Title</a></li>
+					<% if Notes %>
+						<li><a href="$Link">$Date.Format(F d&#44; Y) $Time - $Location</a></li>
+					<% else %>
+						<li>$Date.Format(F d&#44; Y) $Time - $Location</li>
+					<% end_if %>
+					
 				<% end_control %>
 			</ul>
 		<% end_if %>
@@ -27,9 +35,9 @@
 				<% control CommitteeMeetings %>
 				
 					<% if Notes %>
-						<li><a href="$Link">$Title</a></li>
+						<li><a href="$Link">$Date.Format(F d&#44; Y) $Time - $Location</a></li>
 					<% else %>
-						<li>$Title</li>
+						<li>$Date.Format(F d&#44; Y) $Time - $Location</li>
 					<% end_if %>
 					
 				<% end_control %>

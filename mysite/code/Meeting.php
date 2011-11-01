@@ -6,10 +6,13 @@ class Meeting extends DataObject {
 		"Date" => "Date",
 		"Time" => "Text",
 		"Type" => "Text",
-		"Notes" => "HTMLText"
+		"Notes" => "HTMLText",
+		"Location" => "Text"
 	
 	);
-
+	public static $defaults = array(
+		"Location" => "University Capitol Centre 2520D"
+	);
 	public static $has_one = array(
 			 "LegislativeBranchPage" => "LegislativeBranchPage"
 	);
@@ -24,6 +27,8 @@ class Meeting extends DataObject {
 		return new FieldSet(
 			$date_field,
 			new TextField("Time","Time of the Meeting"),
+			new TextField("Location","Location of the Meeting"),
+
 			new DropdownField("Type","Type of the Meeting", $meetingTypes),
 			new TextField("Title","Title of the Meeting (optional)"),
 			new SimpleTinyMCEField("Notes", "Meeting Notes")
