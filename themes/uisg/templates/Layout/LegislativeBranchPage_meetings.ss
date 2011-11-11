@@ -12,36 +12,46 @@
 		<% end_control %>
 	<% else %>
 		<h1>Meetings</h1>
-		
 		<% if SenateMeetings %>
 			<h2>Senate Meetings</h2>
-				$SenateMeetingsContent
-			<ul class="meetings">
-				<% control SenateMeetings %>
-					<% if Notes %>
-						<li><a href="$Link">$Date.Format(F d&#44; Y) $Time - $Location</a></li>
-					<% else %>
-						<li>$Date.Format(F d&#44; Y) $Time - $Location</li>
-					<% end_if %>
-					
-				<% end_control %>
-			</ul>
-		<% end_if %>
+			<table id="meetings" class="senate">
+					<tr>
+						<th>Meeting Date</th>
+						<th>Meeting Location</th>
+					</tr>
+					<% control SenateMeetings %>
+					<tr class="$EvenOdd">
+						<td><% if Notes %><a href="$Link">$Date.Format(F d&#44; Y) $Time (meeting notes)</a><% else %>
+							$Date.Format(F d&#44; Y) $Time
+							<% end_if %>
+						</td>
+						<td>$Location</td>
+					</tr>
+					<% end_control %>
+			</table>
+
+				<% end_if %>
 		
-		<% if CommitteeMeetings %>
-			<h2>Committee Meetings</h2>
+		<h2>Committee Meetings</h2>
 			$CommitteeMeetingsContent
-			<ul class="meetings">
-				<% control CommitteeMeetings %>
-				
-					<% if Notes %>
-						<li><a href="$Link">$Date.Format(F d&#44; Y) $Time - $Location</a></li>
-					<% else %>
-						<li>$Date.Format(F d&#44; Y) $Time - $Location</li>
-					<% end_if %>
-					
-				<% end_control %>
-			</ul>
+		<% if CommitteeMeetings %>
+
+			<table id="meetings" class="committee">
+					<tr class="$EvenOdd">
+						<th>Meeting Date</th>
+						<th>Meeting Location</th>
+					</tr>
+					<% control CommitteeMeetings %>
+					<tr class="$EvenOdd">
+						<td ><% if Notes %><a href="$Link">$Date.Format(F d&#44; Y) $Time (meeting notes)</a><% else %>
+							$Date.Format(F d&#44; Y) $Time
+							<% end_if %>
+						</td>
+						<td>$Location</td>
+					</tr>
+					<% end_control %>
+			</table>
+			
 		<% end_if %>
 		
 				

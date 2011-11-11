@@ -12,7 +12,16 @@ $databaseConfig = array(
 	"database" => 'uisg',
 	"path" => '',
 );
-
+/*
+$databaseConfig = array(
+	"type" => 'SQLiteDatabase',
+	"server" => 'none',
+	"username" => 'none',
+	"password" => 'none',
+	"database" => 'uisg',
+	"path" => '/Applications/MAMP/htdocs/uisg/uisg.sqlite',
+);
+*/
 MySQLDatabase::set_connection_charset('utf8');
 
 // This line set's the current theme. More themes can be
@@ -21,7 +30,7 @@ SSViewer::set_theme('blackcandy');
 
 // Set the site locale
 i18n::set_locale('en_US');
-Director::set_environment_type("dev");
+Director::set_environment_type("live");
 // enable nested URLs for this site (e.g. page/sub-page/)
 SiteTree::enable_nested_urls();
 Object::add_extension('BlogTree_Controller', 'BlogTreeExtensions');

@@ -689,3 +689,51 @@ float: right;
 	display: block;
 
 }
+
+/*Legislative Branch Meeting Pages */
+
+#meetings {
+
+	border: 1px solid #DDD;
+	width: 700px;
+}
+
+#meetings td, th {
+	padding: 10px;
+}
+
+.typography #meetings.committee th {
+	background: #334371;
+	border: 1px solid #96a8dd;
+}
+
+.typography #meetings td {
+	font-size: 20px;
+
+}
+
+.typography #meetings th {
+	font-size: 24px;
+	background: #A01815;
+	color: white;
+	border: 1px solid #D96461;
+	
+}
+
+.typography #meetings td {
+	border: 1px solid #bfbfbf;
+
+}
+
+.typography #meetings.committee td a {
+	color: #334371;
+
+}
+
+#meetings tr.even {
+	background: #ededed;
+
+}
+
+
+
