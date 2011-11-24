@@ -92,8 +92,8 @@
 					</div>
 					<div id="footer-logos">
 					
-						<a href="http://www.uiowa.edu/"><img src="$ThemeDir/images/uisg_dome_logo.png" /></a>
-						<a href="{$BaseHref}"><img src="$ThemeDir/images/uiowa.png" class="footer-uiowa" /></a>
+						<a href="http://uisg.uiowa.edu/"><img src="$ThemeDir/images/uisg_dome_logo.png" /></a>
+						<a href="http://www.uiowa.edu/"><img src="$ThemeDir/images/uiowa.png" class="footer-uiowa" /></a>
 					
 					
 					</div>
