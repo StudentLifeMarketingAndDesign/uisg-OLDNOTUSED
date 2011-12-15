@@ -14,7 +14,7 @@ class Meeting extends DataObject {
 		"Location" => "University Capitol Centre 2520D"
 	);
 	public static $has_one = array(
-			 "LegislativeBranchPage" => "LegislativeBranchPage"
+		"LegislativeBranchPage" => "LegislativeBranchPage"
 	);
 	
 	public function getCMSFields_forPopup()

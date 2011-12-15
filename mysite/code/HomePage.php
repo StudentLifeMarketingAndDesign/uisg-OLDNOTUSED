@@ -3,7 +3,8 @@ class HomePage extends Page {
 
 	public static $db = array(
 	
-		"Tagline" => "HTMLText"
+		"Tagline" => "HTMLText",
+		"ShowRandomProfile" => "Boolean",
 	
 	);
 
@@ -15,8 +16,7 @@ class HomePage extends Page {
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
 		$fields->removeFieldFromTab("Root.Content.Main","Content");
-		$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('Tagline','Header Tagline', $rows = 5));
-
+		$fields->addFieldToTab("Root.Content.Main", new CheckboxField("ShowRandomProfile","Show Random Members?"));
 		return $fields;
 	}
 }

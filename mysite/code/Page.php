@@ -12,6 +12,19 @@ class Page extends SiteTree {
 		return $posts;
 	}
 	
+	function RandomPersonProfile() {
+		$homepage = DataObject::get_one("HomePage");
+		$persons = DataObject::get("BranchPersonPage");
+		$personsArray = $persons->ToArray();
+		
+		if ($homepage->ShowRandomProfile == 1){
+			shuffle($personsArray);
+		}
+		
+		if($personsArray[0]){ 
+			return $personsArray[0];
+		}
+	}	
 
 }
 class Page_Controller extends ContentController {

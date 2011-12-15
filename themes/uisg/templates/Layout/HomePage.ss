@@ -57,6 +57,31 @@
 			</div>
 			<% end_control %>
 		<% end_if %>	
+		
+		<!--
+			<% control RandomPersonProfile %>
+			<div id="homepage-featured-student" class="homepage-feature">
+				<h2><a href="{$BaseHref}hawkeye-spotlight#{$URLSegment}">$Title</a></h2>
+				<div id="homepage-featured-student-content">
+					$Image.SetWidth(150) 
+					
+					<% if PreviewText %>
+					$PreviewText
+					<% else %>
+					$Content.BigSummary(50)	
+					<% end_if %>
+					<div style="clear:left"></div>
+					<ul class="featured-student-nav">
+						<li><a href="$Link">Read more about $Title</a></li>
+						<li><a href="$BaseHref/hawkeye-spotlight">View all UISG Members</a></li>
+					</ul>
+					<div style="clear:left"></div>				
+				</div>
+			</div>
+			<% end_control %>
+			-->
+
+
 			<script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script type="text/javascript">
 new TWTR.Widget({
@@ -116,7 +141,7 @@ new TWTR.Widget({
 				
 				<div id="headline-container">
 					<ul>
-						<% control BlogPosts(4) %>
+						<% control BlogPosts(8) %>
 							<li>
 							<h3><a href="$Link">$Title</a></h3>
 							<p class="posted-by"><a href="$Link">Posted on $Date.Format(F j)</a></p>
