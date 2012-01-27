@@ -17,7 +17,7 @@ class LegislativeBranchPage extends BranchPage {
 	
 	);
 	
-	public static $allowed_children = array ("BranchPersonPage", "MeetingsPage");
+	public static $allowed_children = array ("BranchPersonPage", "MeetingsPage", "CommitteePage");
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
@@ -62,6 +62,18 @@ class LegislativeBranchPage_Controller extends BranchPage_Controller {
         {       
             return $StaffMember;
         }
+    }
+    
+    function AllCommittees(){
+    	$committees = DataObject::get("Committee");
+    	
+    	if($committees){
+    		return $committees;
+    	}else{
+    		return false;
+    	}
+    
+    
     }
 	
 	function meetings(){

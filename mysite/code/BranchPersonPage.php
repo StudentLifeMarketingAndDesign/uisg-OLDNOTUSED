@@ -15,12 +15,33 @@ class BranchPersonPage extends Page {
 
 	public static $has_one = array(
 	
-		"MainImage" => "Image"
+		"MainImage" => "Image",
+	
+	);
+	
+	public static $many_many = array(
+	
+		"Committees" => "Committee"
 	
 	);
 	
 	function getCMSFields() {
+	
+	
+	
 		$fields = parent::getCMSFields();
+		
+		$committeeTablefield = new ManyManyComplexTableField(
+        	$this,
+        	'Committees',
+        	'Committee',
+        	array(
+       		'Title' => 'Title'
+        	),
+        	'getCMSFields_forPopup'
+      	);
+		//$committeeTablefield->setAddTitle( 'Committee(s) this person is on' );
+		
 		
 		$fields->removeFieldFromTab('Root.Content.Main', 'Content');
 		$fields->addFieldToTab('Root.Content.Main', new ImageField('MainImage','Main Image (300x300)'));
@@ -32,7 +53,7 @@ class BranchPersonPage extends Page {
 		$fields->addFieldToTab('Root.Content.Main', new TextField('MajorMinor','Major and/or Minor'));
 		$fields->addFieldToTab('Root.Content.Main', new TextField('CommitteeAssignment','Committee Assignment'));
 		
-		
+		$fields->addFieldToTab('Root.Content.Committees', $committeeTablefield);
 		$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('Content','About/Biography'));
 
 		return $fields;

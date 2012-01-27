@@ -249,8 +249,7 @@ body {
 
 #branch-people {
 	float: left;
-	width: 350px;
-	margin-left: 20px;
+	width: 100%;
 }
 
 /* Home Page Styles */
@@ -746,29 +745,21 @@ float: right;
 
 }
 
-/*Legislative Branch Meeting Pages */
+/*Legislative Branch Meeting Pages and general table styles */
 
-#meetings {
 
-	border: 1px solid #DDD;
-	width: 700px;
-}
 
-#meetings td, th {
+td, th {
 	padding: 10px;
 }
 
-.typography #meetings.committee th {
-	background: #334371;
-	border: 1px solid #96a8dd;
-}
 
-.typography #meetings td {
+.typography td {
 	font-size: 20px;
 
 }
 
-.typography #meetings th {
+.typography th {
 	font-size: 24px;
 	background: #A01815;
 	color: white;
@@ -776,18 +767,46 @@ float: right;
 	
 }
 
-.typography #meetings td {
+.typography td {
 	border: 1px solid #bfbfbf;
 
 }
 
-.typography #meetings.committee td a {
+.typography td a {
 	color: #334371;
 
 }
-
-#meetings tr.even {
+tr.even {
 	background: #ededed;
+
+}
+
+.typography #meetings.committee th {
+	background: #334371;
+	border: 1px solid #96a8dd;
+}
+#meetings {
+
+	border: 1px solid #DDD;
+	width: 700px;
+}
+
+/* Legislative Branch Page */
+
+#committee-list {
+	width: 300px;
+	float: right;
+}
+
+table#branch-people {
+	float: left;
+	width: 100%;
+}
+
+#content ul {
+	padding: 5px;
+	border: 1px solid #ddd;
+	background: #ccc;
 
 }
 
