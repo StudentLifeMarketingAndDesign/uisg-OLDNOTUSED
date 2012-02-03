@@ -9,7 +9,7 @@ $databaseConfig = array(
 	"server" => 'localhost',
 	"username" => 'root',
 	"password" => 'root',
-	"database" => 'uisg',
+	"database" => 'uisg_dev',
 	"path" => '',
 );
 /*

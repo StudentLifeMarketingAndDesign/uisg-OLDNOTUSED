@@ -1,4 +1,4 @@
-.typography *{
+.typography{
 	font-family: 'EB Garamond', 'Garamond', 'Georgia', serif;
 
 }
@@ -243,3 +243,5 @@ color: white;
 .tagcloud .popular { font-size: 0.8em; }
 .tagcloud .very-popular { font-size: 1em; }
 .tagcloud .ultra-popular { font-size: 1.1em; }
+
+/*Legislative Branch*/

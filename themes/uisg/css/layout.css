@@ -751,9 +751,22 @@ float: right;
 
 td, th {
 	padding: 10px;
-	width:100%;
 }
 
+td.img{
+	width: 320px;
+	padding-bottom: 5px;
+	background-color: #dedede;
+}
+
+td.name{
+	width:195px;
+	padding: 20px;
+}
+
+td.pos{
+	width:5px;
+}
 
 .typography td {
 	font-size: 20px;
@@ -777,6 +790,24 @@ td, th {
 	color: #334371;
 
 }
+
+td.img span{
+	color: #aaa;
+	font-family: Helvetica, sans-serif;
+	margin-left: 60px;
+	font-weight: bold;
+}
+
+td.name span{
+	font-size: 32px;
+	margin:0 auto;
+}
+
+td.pos span{
+	font-size: 24px;
+	margin:0 auto;
+}
+
 tr.even {
 	background: #ededed;
 
@@ -797,23 +828,57 @@ tr.even {
 #committee-list {
 	width: 300px;
 	float: right;
+	background-color: #dedede;
+	padding-left: 10px;
+	margin-top: 10px;
 }
 
-#branch-content h2, span a{
+#committee-list li {
+	color: #A01815;
+}
+
+#branch-content h2{
 	float: left;
+	clear: both;
+	margin-top: 20px;
+}
+
+.btt{
+	float: left;
+	clear: both;
+	margin-top: 7px;
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	margin-left: 1px;
+}
+.btt a:hover{
+	color: #666;
 }
 
 table.branch-people {
 	float: left;
+}
+
+table.branch-people {
 	width: 100%;
 	margin-top: 10px;
 }
 
+table.branch-people ul{
+	margin: 0 auto;
+}
+
+table.branch-people li{
+	font-size: 24px;
+	background-color: #dedede;
+	list-style: none;
+	padding: 0 10px;
+	margin-bottom: 10px;
+	margin-left: 0;
+}
+
 #content ul {
 	padding: 5px;
-	border: 1px solid #ddd;
-	background: #ccc;
-
 }
 
 
