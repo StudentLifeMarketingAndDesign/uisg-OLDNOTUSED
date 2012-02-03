@@ -14,7 +14,7 @@
 			<ul>
 			<% control AllCommittees %>
 			
-			<li>$Title</li>
+			<li><a href="#committee-{$ID}">$Title</a></li>
 			
 			<% end_control %>
 			</ul>
@@ -23,28 +23,33 @@
 		
 		<div id="branch-content">
 		
-			<% if Children %>
+			<% if AllCommittees %>
 			
-			<table id="branch-people">
-				<tbody>
-					<tr>
-						<th>Name</th>
-						<th>Picture</th>
-						<th>Position</th>
-						<th>Committee(s)</th>
-					
-					</tr>
-					<% control Children %>
-						<tr class="$EvenOdd">
-							<td>$FirstName $LastName</td>
-							<td><% if MainImage %>$MainImage<% else %>No Image Available<% end_if %></td>
-							<td>$Position</td>
-							<td><% if Committees %><ul><% control Committees %><li>$Title</li><% end_control %></ul><% end_if %></td>
+			<% control AllCommittees %>
+			<h2>$Title</h2> <span><a href="#">Back to Top</a></span>
+				<table id="committee-$ID" class="branch-people">
+					<tbody>
+						<tr>
+							<th>Name</th>
+							<th>Picture</th>
+							<th>Position</th>
+							<th>Committee(s)</th>
 						
 						</tr>
-					<% end_control  %>
-				</tbody>	
-			</table>
+						
+						<% control BranchPersonPages %>
+							<tr class="$EvenOdd">
+								<td>$FirstName $LastName</td>
+								<td><% if MainImage %>$MainImage<% else %>No Image Available<% end_if %></td>
+								<td>$Position</td>
+								<td><% if Committees %><ul><% control Committees %><li>$Title</li><% end_control %></ul><% end_if %></td>
+							
+							</tr>
+						<% end_control %>
+					</tbody>	
+				</table>
+		<% end_control %>
+
 			
 			<!--<div id="branch-people">
 			

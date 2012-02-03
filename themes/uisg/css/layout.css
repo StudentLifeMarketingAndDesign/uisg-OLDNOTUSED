@@ -798,16 +798,12 @@ tr.even {
 	float: right;
 }
 
-table#branch-people {
-	float: left;
+table.branch-people {
 	width: 100%;
 }
 
 #content ul {
 	padding: 5px;
-	border: 1px solid #ddd;
-	background: #ccc;
-
 }
 
 
