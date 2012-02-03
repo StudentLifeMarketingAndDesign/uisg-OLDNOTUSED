@@ -751,6 +751,7 @@ float: right;
 
 td, th {
 	padding: 10px;
+	width:100%;
 }
 
 
@@ -798,9 +799,14 @@ tr.even {
 	float: right;
 }
 
-table#branch-people {
+#branch-content h2, span a{
+	float: left;
+}
+
+table.branch-people {
 	float: left;
 	width: 100%;
+	margin-top: 10px;
 }
 
 #content ul {
