@@ -29,20 +29,19 @@
 			<h2>$Title</h2>
 				<table id="committee-$ID" class="branch-people">
 					<tbody>
-						<tr>
+						<!--<tr>
 							<th>Name</th>
 							<th>Picture</th>
 							<th>Position</th>
 							<th>Committee(s)</th>
 						
-						</tr>
+						</tr>-->
 						
 						<% control BranchPersonPages %>
 							<tr class="$EvenOdd">
-								<td class="name"><span>$FirstName $LastName</span></td>
 								<td class="img"><% if MainImage %>$MainImage.CroppedImage(320,180)<% else %><span>No Image Available</span><% end_if %></td>
-								<td class="pos"><span>$Position</span></td>
-								<td><% if Committees %><ul><% control Committees %><li>$Title</li><% end_control %></ul><% end_if %></td>
+								<td class="name"><span class="pos">$Position</span><br /><span class="name">$FirstName $LastName</span></td>
+								<td class="com"><span class="com-head">Committee(s):</span><br /><% if Committees %><ul><% control Committees %><li>$Title</li><% end_control %></ul><% end_if %></td>
 							
 							</tr>
 						<% end_control %>

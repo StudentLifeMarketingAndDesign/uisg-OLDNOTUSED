@@ -161,7 +161,7 @@ body {
 
 
 #content1 {
-	padding: 20px 40px;
+	padding: 20px 70px;
 
 
 }
@@ -756,7 +756,7 @@ td, th {
 td.img{
 	width: 320px;
 	padding-bottom: 5px;
-	background-color: #dedede;
+	background-color: #cfcfcf;
 }
 
 td.name{
@@ -764,8 +764,8 @@ td.name{
 	padding: 20px;
 }
 
-td.pos{
-	width:5px;
+td.com{
+	padding-left: 25px;
 }
 
 .typography td {
@@ -777,12 +777,13 @@ td.pos{
 	font-size: 24px;
 	background: #A01815;
 	color: white;
-	border: 1px solid #D96461;
+/*	border: 1px solid #D96461;*/
 	
 }
 
 .typography td {
-	border: 1px solid #bfbfbf;
+	border: 10px solid;
+	border-color: whiteSmoke;
 
 }
 
@@ -798,19 +799,27 @@ td.img span{
 	font-weight: bold;
 }
 
-td.name span{
+.com-head {
+	color: #8c8c8c;
+}
+
+.name{
 	font-size: 32px;
 	margin:0 auto;
 }
 
-td.pos span{
-	font-size: 24px;
-	margin:0 auto;
+.pos{
+	font-size: 18px;
+	float: left;
 }
 
 tr.even {
-	background: #ededed;
+	background: #dedede;
 
+}
+
+tr.odd {
+	background: #ededed;
 }
 
 .typography #meetings.committee th {
@@ -830,7 +839,8 @@ tr.even {
 	float: right;
 	background-color: #dedede;
 	padding-left: 10px;
-	margin-top: 10px;
+	margin-top: 40px;
+	margin-bottom: -20px;
 }
 
 #committee-list li {
@@ -840,7 +850,8 @@ tr.even {
 #branch-content h2{
 	float: left;
 	clear: both;
-	margin-top: 20px;
+	margin-top: 50px;
+	font-size: 50px;
 }
 
 .btt{
@@ -857,9 +868,6 @@ tr.even {
 
 table.branch-people {
 	float: left;
-}
-
-table.branch-people {
 	width: 100%;
 	margin-top: 10px;
 }
@@ -869,12 +877,13 @@ table.branch-people ul{
 }
 
 table.branch-people li{
-	font-size: 24px;
-	background-color: #dedede;
+	font-size: 18px;
 	list-style: none;
 	padding: 0 10px;
-	margin-bottom: 10px;
+	margin-top: 12px;
+	margin-bottom: 17px;
 	margin-left: 0;
+	line-height: 25px;
 }
 
 #content ul {
