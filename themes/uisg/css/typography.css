@@ -57,6 +57,10 @@
 
 }
 
+.initiative h2{
+	font-size: 26px;
+}
+
 .typography h3, .typography h3 a {
 	/*font-family: 'Rokkit', serif;*/
 		font-family: 'EB Garamond', 'Garamond', 'Georgia', serif;

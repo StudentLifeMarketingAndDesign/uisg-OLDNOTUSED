@@ -228,12 +228,13 @@ body {
 
 #branch-intro {
 	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
 
 }
 
 
 #branch-intro p {
-	float: left;
+	/*float: left;*/
 	/*width: 450px;*/
 
 }
@@ -250,6 +251,17 @@ body {
 #branch-people {
 	float: left;
 	width: 100%;
+}
+
+
+table.branch-initiatives {
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 10px;
+}
+
+table.branch-initiatives .odd:before{
+	content: "hi";
 }
 
 /* Home Page Styles */
@@ -759,8 +771,18 @@ td.img{
 	background-color: #cfcfcf;
 }
 
+.branch-initiatives td.img{
+	width: 200px;
+	padding-bottom: 5px;
+	background-color: #cfcfcf;
+}
+
 td.name{
 	width:195px;
+	padding: 20px;
+}
+
+td.initiative{
 	padding: 20px;
 }
 
@@ -796,6 +818,13 @@ td.img span{
 	color: #aaa;
 	font-family: Helvetica, sans-serif;
 	margin-left: 60px;
+	font-weight: bold;
+}
+
+.branch-initiatives td.img span{
+	color: #aaa;
+	font-family: Helvetica, sans-serif;
+	margin-left: 10px;
 	font-weight: bold;
 }
 
@@ -837,12 +866,17 @@ tr.odd {
 #committee-list {
 	width: 300px;
 	float: right;
-	background-color: #dedede;
+	background-color: white;
+	border: 1px solid #ddd;
+	margin-left: 25px;
 	padding-left: 10px;
 	margin-top: 40px;
-	margin-bottom: -20px;
+	/*margin-bottom: -20px;*/
 }
+#committee-list h2 {
+	text-align: center;
 
+}
 #committee-list li {
 	color: #A01815;
 }
@@ -872,11 +906,11 @@ table.branch-people {
 	margin-top: 10px;
 }
 
-table.branch-people ul{
+table.branch-people ul, table.branch-initiatives ul{
 	margin: 0 auto;
 }
 
-table.branch-people li{
+table.branch-people, table.branch-initiatives li{
 	font-size: 18px;
 	list-style: none;
 	padding: 0 10px;
@@ -888,6 +922,12 @@ table.branch-people li{
 
 #content ul {
 	padding: 5px;
+}
+
+.branch-person-pic {
+	float: right;
+	margin-left: 25px;
+
 }
 
 
