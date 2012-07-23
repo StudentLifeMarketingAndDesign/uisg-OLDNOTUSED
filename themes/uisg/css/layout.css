@@ -260,10 +260,6 @@ table.branch-initiatives {
 	margin-top: 10px;
 }
 
-table.branch-initiatives .odd:before{
-	content: "hi";
-}
-
 /* Home Page Styles */
 
 
