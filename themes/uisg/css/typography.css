@@ -172,6 +172,11 @@ img a {
 	border: none;
 }
 
+#learn_about{
+	font-size: 23px;
+	color: rgba(118,118,118,1);
+}
+
 #main-feature h2 {
 	font-weight: normal;
 	font-size: 52px;
@@ -222,6 +227,7 @@ color: white;
 .typography #homepage-tagline p{
 	font-size: 32px;
 	line-height: 34px;
+	margin-top: 23px;
 
 }
 
