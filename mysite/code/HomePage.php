@@ -5,6 +5,8 @@ class HomePage extends Page {
 	
 		"Tagline" => "HTMLText",
 		"ShowRandomProfile" => "Boolean",
+		"Caption" => "Text",
+		"LinkURL" => "Text"
 	
 	);
 
@@ -17,6 +19,8 @@ class HomePage extends Page {
 		$fields = parent::getCMSFields();
 		$fields->removeFieldFromTab("Root.Content.Main","Content");
 		$fields->addFieldToTab("Root.Content.Main", new CheckboxField("ShowRandomProfile","Show Random Members?"));
+		$fields->addFieldToTab('Root.Content.Main', new TextField('Caption', 'Caption'));
+		$fields->addFieldToTab('Root.Content.Main', new TextField('LinkURL', 'Link to this URL'));
 		return $fields;
 	}
 }

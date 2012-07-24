@@ -19,8 +19,8 @@
 		</div>
 		
 		<div id="tagline-link-container">
-			<span id="learn_about">Initiative of the week:</span>		
-			<a class="tagline-link" href="{$BaseHref}initiatives/saferide"><span>SafeRide</span></a>
+			<span id="learn_about">Learn about ...</span>		
+			<a class="tagline-link" href="{$LinkURL}"><span>$Caption</span></a>
 			<a class="tagline-link" href="{$BaseHref}funding"><span>request funding</span></a>
 	
 		</div>
