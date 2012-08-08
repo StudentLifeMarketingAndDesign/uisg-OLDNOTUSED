@@ -166,6 +166,18 @@ body {
 
 }
 
+#col1{
+	width: 40%;
+	float: left;
+	padding: 5%;
+}
+
+#col2{
+	width: 40%;
+	float: right;
+	padding: 5%;
+}
+
 /*Blog Styles */
 
 #blog-content{
@@ -632,7 +644,7 @@ background: #ffffff; /* Old browsers */
 
 
 
-#slider {
+#slider, #slider_init {
 	float: left;
 
 }

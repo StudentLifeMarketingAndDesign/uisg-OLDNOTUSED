@@ -47,6 +47,19 @@ Author URI: http://dev7studios.com
     padding:8px 0 0 82px;
     z-index:20;
 }
+
+#initiative_content .theme-pascal .nivo-controlNav {
+    background:url(controlnav.png) no-repeat;
+    background: none;
+    width:251px;
+    height:40px;
+    position:absolute;
+    left:285px; /* Tweak this to center bullets */
+    bottom:-42px;
+    padding:1px 0 0 82px;
+    z-index:20;
+}
+
 .theme-pascal .nivo-controlNav a {
     display:block;
     width:22px;

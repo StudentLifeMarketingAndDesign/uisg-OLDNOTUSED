@@ -247,6 +247,11 @@ color: white;
 
 }
 
+#initiative_content h1{
+	
+	margin: 50px 0 0 10px;;
+}
+
 .tagcloud .not-popular { font-size: 0.5em; }
 .tagcloud .not-very-popular { font-size: 0.6em; }
 .tagcloud .somewhat-popular { font-size: 0.7em; }
