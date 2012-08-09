@@ -55,8 +55,7 @@ Author URI: http://dev7studios.com
     height:40px;
     position:absolute;
     left:285px; /* Tweak this to center bullets */
-    bottom:-42px;
-    padding:1px 0 0 82px;
+    padding:0 0 0 82px;
     z-index:20;
 }
 
@@ -104,6 +103,9 @@ Author URI: http://dev7studios.com
     text-transform:uppercase;
 }*/
 
+#initiative_content .theme-pascal .nivo-caption{
+	display: none !important;
+}
 
 .theme-pascal .nivo-caption {
     font-family: Helvetica, Arial, sans-serif;
