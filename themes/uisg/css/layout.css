@@ -274,8 +274,27 @@ body {
 
 table.branch-initiatives {
 	margin: 0 auto;
-	width: 100%;
+	width: 97%;
 	margin-top: 10px;
+}
+
+table#highlighted-initiative{
+	background-color: #dedede;
+	padding: 20px;
+	width: 100%;
+}
+
+table#highlighted-initiative h2{
+	font-size: 36px;
+}
+
+table#highlighted-initiative p{
+	font-size: 21px;
+}
+
+#hinit{
+	padding: 14px 14px 9px 17px;
+	width: 204px;
 }
 
 /* Home Page Styles */
