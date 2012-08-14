@@ -13,8 +13,8 @@
 									<img src="themes/uisg/images/gtkm.jpg" />
 							</td>
 								<td class="initiative">
-									<a href="get-to-know-me/"><h2>Get to Know Me</h2></a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<a href="get-to-know-me/"><h2>Get To Know Me</h2></a>
+									<p>Learn about the Get To Know Me campaign!</p>
 								</td>
 							</tr>
 					</tbody>
@@ -31,7 +31,11 @@
 								<td class="initiative">
 									<a name="$URLSegment"></a>
 									<a href="$Link"><h2>$MenuTitle</h2></a>
-									<p>$Content.FirstSentence</p>
+									<% if Teaser %>
+									<p>$Teaser</p>
+									<% else %>
+									<p>Learn about $MenuTitle!</p>
+									<% end_if %>
 								</td>
 							</tr>
 

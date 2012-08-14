@@ -3,6 +3,7 @@ class PlatformInitiativePageTwoCol extends Page {
 
 	public static $db = array(
 	
+		"Tease" => "Text",
 		"Col1" => "HTMLText",
 		"Col2" => "HTMLText",
 		"VidTitle" => "Varchar(255)",
@@ -23,6 +24,7 @@ class PlatformInitiativePageTwoCol extends Page {
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
 		
+		$fields->addFieldToTab('Root.Content.Main', new TextField('Teaser','Teaser Text'));
 		$fields->addFieldToTab('Root.Content.Main', new ImageField('MainImage','Main Image'));
 		$fields->addFieldToTab('Root.Content.Main', new ImageField('Banner','Banner Image'));
 		$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('Col1','First Column'));
