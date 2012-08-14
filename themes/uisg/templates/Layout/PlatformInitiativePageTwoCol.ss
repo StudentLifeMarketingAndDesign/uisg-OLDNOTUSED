@@ -48,6 +48,15 @@
 	<div id="col1">
 	$Col1
 	</div>
+	
+	<% if Vid %>
+	<div id="vid">
+	<h2>$VidTitle</h2>
+	<iframe width="400" height="235" src="http://www.youtube.com/embed/$Vid" frameborder="0" allowfullscreen></iframe>
+	<div class="clear"></div>
+	<span class="caption">$VidCaption</span>
+	</div>
+	<% end_if %>
 	<div id="col2">
 	$Col2
 	</div>
