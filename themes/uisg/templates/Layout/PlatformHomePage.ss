@@ -2,7 +2,6 @@
 
 	<div id="content1">
 	<h1>Initiatives</h1>
-	$Content
 	
 	
 	
@@ -43,6 +42,8 @@
 						<% end_control %>
 					</tbody>
 	</table>
+	
+	$Content
 			
 			
 			<div class="clear"></div>

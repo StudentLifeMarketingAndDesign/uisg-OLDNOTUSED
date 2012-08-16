@@ -114,15 +114,14 @@ new TWTR.Widget({
 }).render().setUser('uisg').start();
 </script>
 	<div id="homepage-current-initiatives">
-			<h2><a href="{$BaseHref}platform/">Current Initiatives</a></h2>
+			<h2><a href="{$BaseHref}initiatives/">Current Initiatives</a></h2>
 			<ul id="initiative-list">
 			
-			<% control ChildrenOf(platform) %>
+			<% control ChildrenOf(initiatives) %>
 			<li><a href="{$Parent.Link}#{$URLSegment}" <% if FirstLast %>class="$FirstLast"<% end_if %>>$Title</a></li>
 			<% end_control %>
 			</ul>
 		</div>
-		
 <div id="homepage-contact-form">
 <a name="contact"></a>
 			<h3>Comments, Questions?</h3>
