@@ -22,7 +22,6 @@
 	<table id="committee-$ID" class="branch-initiatives">
 					<tbody>
 						<% control Children %>
-						<% if MainImage %>
 							<tr class="$EvenOdd">
 								<td class="img">
 									<a href="$Link">$MainImage.CroppedImage(200,100)</a>
@@ -38,7 +37,6 @@
 								</td>
 							</tr>
 
-						<% end_if %>
 						<% end_control %>
 					</tbody>
 	</table>
