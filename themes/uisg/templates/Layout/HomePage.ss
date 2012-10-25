@@ -19,9 +19,19 @@
 		</div>
 		
 		<div id="tagline-link-container">
-			<span id="learn_about">Learn about ...</span>		
-			<a class="tagline-link" href="{$LinkURL}"><span>$Caption</span></a>
-			<a class="tagline-link" href="{$BaseHref}funding"><span>request funding</span></a>
+			<span id="learn_about">Learn about ...</span>	
+			
+			<% if HomePageLinkText1 %>
+			<% if HomePageLinkURL1 %> 
+			<a class="tagline-link" href="{$HomePageLinkURL1}"><span>$HomePageLinkText1</span></a>
+			<% end_if %>
+			<% end_if %>
+			
+			<% if HomePageLinkText2 %>
+			<% if HomePageLinkURL2 %> 
+			<a class="tagline-link" href="{$HomePageLinkURL2}"><span>$HomePageLinkText2</span></a>
+			<% end_if %>
+			<% end_if %>
 	
 		</div>
 		<div class="clear"></div>	
