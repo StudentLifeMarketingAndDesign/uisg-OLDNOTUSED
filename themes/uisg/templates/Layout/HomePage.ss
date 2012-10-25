@@ -10,25 +10,28 @@
 </script>
 
 <style type="text/css">
-@import "jquery.countdown.css";
+@import "{$BaseHref}mysite/countdown/jquery.countdown.css";
 
-#defaultCountdown { width: 240px; height: 45px; }
+#defaultCountdown { width: 480px; height: 70px; }
 </style>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script type="text/javascript" src="{$BaseHref}mysite/countdown/jquery.countdown.js"></script>
 <script type="text/javascript">
 $(function () {
 	var austDay = new Date();
-	austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 26);
+	austDay = new Date(austDay.getFullYear(), 11 - 1, 2);
 	$('#defaultCountdown').countdown({until: austDay});
 	$('#year').text(austDay.getFullYear());
 });
 </script>
 
 <div id="content"  class="typography">
-							
-<div id="defaultCountdown"></div>
-						
+
+<div id="countdown">
+<p>Countdown to the Election Day,</p>
+<p><span id="electionday">November 2nd, 2012</span></p>	
+</div>					
+<div id="defaultCountdown"></div>	
 
 	<div id="homepage-tagline-container" >
 	
