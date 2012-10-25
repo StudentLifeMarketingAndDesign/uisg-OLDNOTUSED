@@ -2,15 +2,36 @@
     <link rel="stylesheet" href="{$ThemeDir}/css/nivo-pascal/pascal.css" type="text/css" media="screen" />
 <script src="{$BaseHref}/mysite/javascript/jquery.min.1.4.2.js" type="text/javascript"></script>
 
-<script type="text/javascript" src="{$BaseHref}/mysite/javascript/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="{$BaseHref}mysite/javascript/jquery.nivo.slider.pack.js"></script>
 <script type="text/javascript">
     $(window).load(function() {
         $('#slider').nivoSlider();
     });
 </script>
+
+<style type="text/css">
+@import "{$BaseHref}mysite/countdown/jquery.countdown.css";
+
+#defaultCountdown { width: 480px; height: 70px; }
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="{$BaseHref}mysite/countdown/jquery.countdown.js"></script>
+<script type="text/javascript">
+$(function () {
+	var austDay = new Date();
+	austDay = new Date(austDay.getFullYear(), 11 - 1, 2);
+	$('#defaultCountdown').countdown({until: austDay});
+	$('#year').text(austDay.getFullYear());
+});
+</script>
+
 <div id="content"  class="typography">
-							
-						
+
+<div id="countdown">
+<p>Countdown to the Election Day,</p>
+<p><span id="electionday">November 2nd, 2012</span></p>	
+</div>					
+<div id="defaultCountdown"></div>	
 
 	<div id="homepage-tagline-container" >
 	
