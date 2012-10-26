@@ -827,8 +827,8 @@ td.img{
 }
 
 td.name{
-	width:340px;
-	padding: 20px;
+	width:390px;
+	padding: 80px;
 }
 
 td.initiative{
@@ -881,7 +881,7 @@ td.img span{
 	color: #8c8c8c;
 }
 
-.name{
+.name a{
 	font-size: 32px;
 	margin:0 auto;
 }
