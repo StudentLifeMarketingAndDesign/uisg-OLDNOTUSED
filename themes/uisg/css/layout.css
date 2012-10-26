@@ -816,7 +816,6 @@ td, th {
 }
 
 td.img{
-	width: 320px;
 	padding-bottom: 5px;
 	background-color: #cfcfcf;
 }
@@ -828,7 +827,7 @@ td.img{
 }
 
 td.name{
-	width:195px;
+	width:340px;
 	padding: 20px;
 }
 
@@ -894,7 +893,6 @@ td.img span{
 
 tr.even {
 	background: #dedede;
-
 }
 
 tr.odd {

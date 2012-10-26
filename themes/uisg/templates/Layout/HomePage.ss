@@ -19,7 +19,7 @@
 <script type="text/javascript">
 $(function () {
 	var austDay = new Date();
-	austDay = new Date(austDay.getFullYear(), 11 - 1, 2);
+	austDay = new Date(austDay.getFullYear(), 11 - 1, 6);
 	$('#defaultCountdown').countdown({until: austDay});
 	$('#year').text(austDay.getFullYear());
 });
@@ -29,7 +29,7 @@ $(function () {
 
 <div id="countdown">
 <p>Countdown to the Election Day,</p>
-<p><span id="electionday">November 2nd, 2012</span></p>	
+<p><span id="electionday">November 6th, 2012</span></p>	
 </div>					
 <div id="defaultCountdown"></div>	
 
