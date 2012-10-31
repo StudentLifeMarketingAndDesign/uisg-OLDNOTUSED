@@ -8,7 +8,10 @@ class PlatformInitiativePageTwoCol extends Page {
 		"Col2" => "HTMLText",
 		"VidTitle" => "Varchar(255)",
 		"Vid" => "Text",
-		"VidCaption" => "Text"
+		"VidCaption" => "Text",
+		"VidTitle2" => "Varchar(255)",
+		"Vid2" => "Text",
+		"VidCaption2" => "Text"
 	
 	);
 
@@ -32,6 +35,9 @@ class PlatformInitiativePageTwoCol extends Page {
 		$fields->addFieldToTab('Root.Content.Main', new TextField('VidTitle','Youtube Video Title'));
 		$fields->addFieldToTab('Root.Content.Main', new TextField('Vid','Youtube Video ID only (the string of letters and numbers after watch?v=)'));
 		$fields->addFieldToTab('Root.Content.Main', new TextareaField('VidCaption','Video Caption'));
+		$fields->addFieldToTab('Root.Content.Main', new TextField('VidTitle2','Youtube Video Title'));
+		$fields->addFieldToTab('Root.Content.Main', new TextField('Vid2','Youtube Video ID only (the string of letters and numbers after watch?v=)'));
+		$fields->addFieldToTab('Root.Content.Main', new TextareaField('VidCaption2','Video Caption'));
 		$fields->removeFieldFromTab('Root.Content.Main', 'Content');
 		/*$fields->addFieldToTab('Root.Content.Main', new TextField('FirstName','First Name'));
 		$fields->addFieldToTab('Root.Content.Main', new TextField('LastName','Last Name'));

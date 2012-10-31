@@ -57,6 +57,14 @@
 	<span class="caption">$VidCaption</span>
 	</div>
 	<% end_if %>
+	<% if Vid2 %>
+	<div id="vid">
+	<h2>$VidTitle2</h2>
+	<iframe width="400" height="235" src="http://www.youtube.com/embed/$Vid2" frameborder="0" allowfullscreen></iframe>
+	<div class="clear"></div>
+	<span class="caption">$VidCaption2</span>
+	</div>
+	<% end_if %>
 	<div id="col2">
 	$Col2
 	</div>
