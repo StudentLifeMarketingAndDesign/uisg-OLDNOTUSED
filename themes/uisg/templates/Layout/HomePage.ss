@@ -8,7 +8,7 @@
         $('#slider').nivoSlider();
     });
 </script>
-
+<!--
 <style type="text/css">
 @import "{$BaseHref}mysite/countdown/jquery.countdown.css";
 
@@ -24,14 +24,16 @@ $(function () {
 	$('#year').text(austDay.getFullYear());
 });
 </script>
-
+-->
 <div id="content"  class="typography">
 
+<!--	
 <div id="countdown">
 <p>Countdown to the Election Day,</p>
 <p><span id="electionday">November 6th, 2012</span></p>	
-</div>					
-<div id="defaultCountdown"></div>	
+</div>			
+<div id="defaultCountdown"></div>
+-->
 
 	<div id="homepage-tagline-container" >
 	
