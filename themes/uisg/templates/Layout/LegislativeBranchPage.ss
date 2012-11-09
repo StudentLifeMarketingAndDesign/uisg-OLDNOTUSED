@@ -72,9 +72,9 @@
 				<div style="clear:both"></div>
 
 			</div>
-				<!--<% if Chair %>
+				<% if Chair %>
 				<h3 style="clear: both">Chair: <a href="$Link">$Chair.FirstName $Chair.LastName</a></h3>
-				<% end_if %>-->
+				<% end_if %>
 
 				<table class="branch-people">
 					<tbody>

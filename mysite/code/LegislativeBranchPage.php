@@ -51,8 +51,40 @@ class LegislativeBranchPage extends BranchPage {
 }
 class LegislativeBranchPage_Controller extends BranchPage_Controller {
 
-	public static $allowed_actions = array ( "meetings"
+	public static $allowed_actions = array ( "meetings", "committee"
 	);
+	
+	
+	    public function getCommittee(){
+	        $Params = $this->getURLParams();
+	         
+	        if(is_numeric($Params['ID']) && $Committee = DataObject::get_by_id('Committee', (int)$Params['ID']))
+	        {       
+	            return $Committee;
+	        }
+        }
+	
+	
+	public function committee(){
+		
+		 if($Committee = $this->getCommittee()){
+		 
+            $Data = array(
+                'Committee' => $Committee
+            );
+             
+            // print_r($Committee);
+            //return our $Data array to use on the page
+            return $this->Customise($Data)->renderWith(array('LegislativeBranchPage_committee', 'Page'));
+        }
+        else
+        {
+	        
+	        
+        }
+		
+		
+	}
 	
     public function getMeeting()
     {
