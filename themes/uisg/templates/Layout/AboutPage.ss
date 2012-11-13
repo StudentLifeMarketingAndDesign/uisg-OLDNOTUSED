@@ -1,6 +1,8 @@
 <div id="content"  class="typography">
 
 	<div id="content1">
+			<% include Breadcrumbs %>
+
 		<h1>$Title</h1>
 		<div id="about-social-media">
 			<h2>Stay Connected With UISG!</h2>

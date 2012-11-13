@@ -32,9 +32,25 @@ class LegislativeBranchPage extends BranchPage {
 			$sourceFilter = null,
 			$sourceSort = 'Date DESC'
 	
-		);		
+		);	
 
-		
+		$committeesField = new DataObjectManager(
+			$controller = $this,
+			$name = 'Committees',
+			$sourceClass = 'Committee',
+			$fieldList = array( 'Title' => 'Title','Description' => 'Description'),
+			$detailFormFields = 'getCMSFields_forPopup',
+			$sourceFilter = null
+	
+		);			
+		/*$committeesField = new ComplexTableField(
+		  "Committee",
+		  'Title',
+		  'Description',
+		  array('Title','Description')
+		);*/
+ 
+		//$fields->addFieldToTab('Root.Content.Committees', $committeesField);
 		$fields->addFieldToTab('Root.Content.Meetings', $domfield);
 
 		//$fields->removeFieldFromTab('Root.Content.Main', 'Content');
@@ -54,7 +70,26 @@ class LegislativeBranchPage_Controller extends BranchPage_Controller {
 	public static $allowed_actions = array ( "meetings", "committee"
 	);
 	
-	
+		public function Speaker(){
+
+			$speaker = DataObject::get_one("BranchPersonPage", "Position = 'Speaker'");
+
+			if($speaker){
+				return $speaker;
+				
+			}
+
+		}
+		public function Secretary(){
+
+			$Secretary = DataObject::get_one("BranchPersonPage", "Position = 'Secretary'");
+
+			if($Secretary){
+				return $Secretary;
+				
+			}
+
+		}	
 	    public function getCommittee(){
 	        $Params = $this->getURLParams();
 	         

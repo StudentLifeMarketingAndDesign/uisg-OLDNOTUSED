@@ -2,7 +2,7 @@
 <div id="content"  class="typography">
 
 	<div id="content1">
-	
+	<% include Breadcrumbs %>
 	<% if SelectedTag = event %><h1>Events Calendar</h1><% else %><h1>News</h1><% end_if %>
 		<div id="blog-content">
 			

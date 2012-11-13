@@ -1,7 +1,8 @@
 <div id="content"  class="typography">
 
 	<div id="content1">
-	
+			<% include Breadcrumbs %>
+
 		<div id="branch-intro">
 			<h1>$Title</h1>
 			$Content

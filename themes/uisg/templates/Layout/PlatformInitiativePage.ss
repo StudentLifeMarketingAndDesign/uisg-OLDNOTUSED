@@ -1,9 +1,7 @@
 <div id="content"  class="typography">
 
 	<div id="content1">
-	
-	<div id="breadcrumbs">$Breadcrumbs</div>
-	<br />
+	<% include Breadcrumbs %>
 	<h1>$Title</h1>
 	<% if Image1 %><img src="$Image1.URL" class="right" /><% end_if %>
 	$Content

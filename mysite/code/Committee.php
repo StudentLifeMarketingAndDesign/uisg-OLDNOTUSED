@@ -31,12 +31,17 @@ class Committee extends DataObject {
 		
 	}
 	
-	public function getCMSFields_forPopup()
+	/*public function getCMSFields_forPopup()
 	{
 		return new FieldSet(
+			parent::getCMSFields_forPopup(),
 			new SimpleTinyMCEField("Description", "Committee Description")
 			
 		);
+	}*/
+	
+	public function Link(){
+		return "branches/legislative/committee/".$this->ID;	
 	}
 	
 	

@@ -3,6 +3,7 @@
 <div id="content"  class="typography">
 
 	<div id="content1">
+	
 	<p><a href="$Link">Back to the Legislative Branch</a></p>
 	<% if Meeting %>
 	<p><a href="{$Link}/meetings/">Back to Meetings</a></p>

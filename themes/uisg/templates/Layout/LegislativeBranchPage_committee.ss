@@ -1,6 +1,8 @@
 <% control Committee %>
 	<div id="content"  class="typography">
 		<div id="content1">
+		<div id="breadcrumbs"><a href="$BaseHref">UISG</a> &raquo; <a href="branches/">Branches</a> &raquo; <a href="branches/legislative">The Legislative Branch</a> &raquo; $Title</div>
+
 			<h1>$Title</h1>
 			<div id="branch-content">
 				<% if Chair %>

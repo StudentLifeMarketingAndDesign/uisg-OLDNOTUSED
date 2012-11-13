@@ -1,7 +1,7 @@
 <div id="content"  class="typography">
 
 	<div id="content1">
-	
+		<% include Breadcrumbs %>
 		<div id="branch-intro">
 			<h1>$Title</h1>
 			
@@ -12,7 +12,7 @@
 			<ul>
 			<% control AllCommittees %>
 			
-			<li><a href="#committee-{$ID}">$Title</a></li>
+			<li><a href="{$Link}">$Title</a></li>
 			
 			<% end_control %>
 			</ul>
@@ -22,18 +22,7 @@
 			$Content
 			
 			
-			
-			<% if MainImage %><img src="http://dummyimage.com/400x400" /><% end_if %>
-			
-			<div class="clear"></div>
-			
-		</div>
-		
-
-		
-		<div id="branch-content">
-		
-		<% control Speaker %>
+				<% control Speaker %>
 			<table class="speaker">
 				<tbody>
 				
@@ -60,7 +49,18 @@
 				</tbody>
 			</table>
 		<% end_control %>
-		<div style="clear:both"></div>
+
+			<!--<% if MainImage %><img src="http://dummyimage.com/400x400" /><% end_if %>-->
+			
+			<div class="clear"></div>
+			
+		</div>
+		
+
+		
+		<div id="branch-content">
+		
+			<div style="clear:both"></div>
 			<% if AllCommittees %>
 			
 			<% control AllCommittees %>
@@ -72,9 +72,6 @@
 				<div style="clear:both"></div>
 
 			</div>
-				<% if Chair %>
-				<h3 style="clear: both">Chair: <a href="$Link">$Chair.FirstName $Chair.LastName</a></h3>
-				<% end_if %>
 
 				<table class="branch-people">
 					<tbody>

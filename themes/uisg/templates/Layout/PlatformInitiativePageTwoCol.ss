@@ -11,9 +11,7 @@
 <div id="content"  class="typography">
 
 	<div id="content1">
-	
-	<div id="breadcrumbs">$Breadcrumbs</div>
-	<br />
+	<% include Breadcrumbs %>
 		<div id="initiative_content">
 		<% if Children %>
 			<div id="slider" class="nivoSlider theme-pascal">

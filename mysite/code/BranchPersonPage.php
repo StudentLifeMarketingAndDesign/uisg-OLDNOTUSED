@@ -51,7 +51,7 @@ class BranchPersonPage extends Page {
 		$fields->addFieldToTab('Root.Content.Main', new TextField('HometownAndState','Hometown and State'));
 
 		$fields->addFieldToTab('Root.Content.Main', new TextField('MajorMinor','Major and/or Minor'));
-		$fields->addFieldToTab('Root.Content.Main', new TextField('CommitteeAssignment','Committee Assignment'));
+		//$fields->addFieldToTab('Root.Content.Main', new TextField('CommitteeAssignment','Committee Assignment'));
 		
 		$fields->addFieldToTab('Root.Content.Committees', $committeeTablefield);
 		$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('Content','About/Biography'));

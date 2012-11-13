@@ -2,6 +2,7 @@
 <div id="content"  class="typography">
 
 	<div id="content1">
+		<% include Breadcrumbs %>
 		<h1>Upcoming Things</h1>
 		<div id="events-content">
 			
