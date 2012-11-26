@@ -27,13 +27,13 @@
 				<tbody>
 						<td>
 						<% control Speaker %>
-						<a href="$Link">$MainImage.SetWidth(230)</a>
+						<a href="$Link">$MainImage.SetRatioSize(230,267)</a>
 						<a href="$Link"><span class="speakersec">$Position $FirstName $LastName</span></a>
 						<% end_control %>
 						</td>
 						<td>
 						<% control Secretary %>
-						<a href="$Link">$MainImage.SetWidth(230)</a>
+						<a href="$Link">$MainImage.SetRatioSize(230,267)</a>
 						<a href="$Link"><span class="speakersec">$Position $FirstName $LastName</span></a>
 						<% end_control %>
 						</td>
