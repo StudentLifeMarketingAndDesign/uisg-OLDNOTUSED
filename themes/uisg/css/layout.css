@@ -272,9 +272,18 @@ body {
 }
 
 #branch-intro img {
-	float: right;
+	float: left;
 
 }
+
+.speakersec{
+	display: block;
+	text-align: center;
+	width: 230px;
+	padding-top: 15px;
+	clear: both;
+}
+
 #branch-news {
 	width: 500px;
 	float: left;

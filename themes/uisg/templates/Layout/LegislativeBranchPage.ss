@@ -22,33 +22,23 @@
 			$Content
 			
 			
-				<% control Speaker %>
+				
 			<table class="speaker">
 				<tbody>
-				
-					<tr>
-						<td><a href="$Link">$MainImage</a></td>
-					</tr>
-					<tr>
-						<td class="speaker-info"><a href="$Link">$Position $FirstName $LastName</a></td>
-					</tr>
+						<td>
+						<% control Speaker %>
+						<a href="$Link">$MainImage.SetWidth(230)</a>
+						<a href="$Link"><span class="speakersec">$Position $FirstName $LastName</span></a>
+						<% end_control %>
+						</td>
+						<td>
+						<% control Secretary %>
+						<a href="$Link">$MainImage.SetWidth(230)</a>
+						<a href="$Link"><span class="speakersec">$Position $FirstName $LastName</span></a>
+						<% end_control %>
+						</td>
 				</tbody>
 			</table>
-		<% end_control %>
-		
-		<% control Secretary %>
-			<table class="secretary">
-				<tbody>
-				
-					<tr>
-						<td><a href="$Link">$MainImage</a></td>
-					</tr>
-					<tr>
-						<td class="sec-info"><a href="$Link">$Position $FirstName $LastName</a></td>
-					</tr>
-				</tbody>
-			</table>
-		<% end_control %>
 
 			<!--<% if MainImage %><img src="http://dummyimage.com/400x400" /><% end_if %>-->
 			
