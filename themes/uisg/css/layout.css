@@ -38,6 +38,15 @@ body {
 
 }
 
+#committee_description{
+	width: 350px;
+	float: right;
+}
+
+#committee_description p{
+	line-height: 25px;
+}
+
 #countdown{
 	margin-left: 30px;
 	padding-top: 30px;

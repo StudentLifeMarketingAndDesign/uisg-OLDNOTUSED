@@ -6,7 +6,10 @@ class Committee extends DataObject {
 		"Description" => "HTMLText"
 	);
 	public static $has_one = array(
-		"LegislativeBranchPage" => "LegislativeBranchPage"
+		"LegislativeBranchPage" => "LegislativeBranchPage",
+		"Image1"=> "Image",
+		"Image2"=> "Image",
+		"Image3"=> "Image"
 	);
 	
 	public static $belongs_many_many = array (
@@ -35,8 +38,10 @@ class Committee extends DataObject {
 	{
 		return new FieldSet(
 			new TextField("Title", "Title"),
-			new SimpleTinyMCEField("Description", "Committee Description")
-			
+			new SimpleTinyMCEField("Description", "Committee Description"),
+			new ImageField("Image1", "First Image"),
+			new ImageField("Image2", "Second Image"),
+			new ImageField("Image3", "Third Image")
 		);
 	}
 	
