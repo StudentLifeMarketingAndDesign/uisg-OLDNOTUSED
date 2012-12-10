@@ -9,7 +9,8 @@ class Committee extends DataObject {
 		"LegislativeBranchPage" => "LegislativeBranchPage",
 		"Image1"=> "Image",
 		"Image2"=> "Image",
-		"Image3"=> "Image"
+		"Image3"=> "Image",
+		"Image4"=> "Image"
 	);
 	
 	public static $belongs_many_many = array (
@@ -41,7 +42,8 @@ class Committee extends DataObject {
 			new SimpleTinyMCEField("Description", "Committee Description"),
 			new ImageField("Image1", "First Image"),
 			new ImageField("Image2", "Second Image"),
-			new ImageField("Image3", "Third Image")
+			new ImageField("Image3", "Third Image"),
+			new ImageField("Image4", "Fourth Image")
 		);
 	}
 	

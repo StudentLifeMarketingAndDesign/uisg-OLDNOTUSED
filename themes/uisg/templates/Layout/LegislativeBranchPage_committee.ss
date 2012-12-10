@@ -28,6 +28,9 @@
 					<% if Image3 %>
 						$Image3.CroppedImage(500,250)
 					<% end_if %>
+					<% if Image4 %>
+						$Image4.CroppedImage(500,250)
+					<% end_if %>
 			
 			</div>
 			
