@@ -44,46 +44,35 @@ class AboutPage extends Page {
 }
 class AboutPage_Controller extends Page_Controller {
 
-	public static $allowed_actions = array ( "legislations" );
+	public static $allowed_actions = array ( "legislation" );
 	
 	public function init() {
 		parent::init();
 	}
 	
-    public function getLegislation()
+    public function getLegislation($number = 3)
     {
-        $Params = $this->getURLParams();
+       // $Params = $this->getURLParams();
+       
+      $legislations = $this->Legislations();
+      
+      $legislationsLimited = $legislations->getRange(0, $number);
+      
+       
+      return $legislationsLimited;
          
-        if(is_numeric($Params['ID']) && $StaffMember = DataObject::get_by_id('legislation', (int)$Params['ID']))
-        {       
-            return $StaffMember;
-        }
     }
+    
+    
 	
-	function legislations(){
+	public function legislation(){
 	
-        if($legislation = $this->getLegislation())
-        {
-            $Data = array(
-                'Legislation' => $Legislation
+			$legislations = $this->Legislations();
+			
+			$Data = array(
+                'Legislations' => $legislations
             );
-             
-            //return our $Data array to use on the page
-            return $this->Customise($Data);
-        }
-        else
-        {
-        
-        	
-        	$Data = array(
-                'AllLegislations' => DataObject::get("legislation")
-
-            );
-            //Staff member not found
-            return $this->Customise($Data);
-        }	
-	
-	
+            return $this->Customise($Data)->renderWith(array('AboutPage_legislation', 'Page'));
 	
 	}
 }

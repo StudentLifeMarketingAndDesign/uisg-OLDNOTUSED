@@ -261,8 +261,6 @@ body {
 #about-content {
 	width: 450px;
 	float: left;
-
-
 }
 
 /* Branch Page */
@@ -1019,4 +1017,15 @@ padding-top: 5%;
 .caption{
 	width: 33%;
 	font-size: 22px;
+}
+
+#legislations{
+	width: 100%;
+	clear: both;
+	border-top: 1px solid #DDD;
+	margin-top: 20px;
+}
+
+.legislation{
+	margin-bottom: 20px;
 }

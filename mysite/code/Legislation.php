@@ -7,7 +7,8 @@ class Legislation extends DataObject {
 	
 	);
 	public static $has_one = array(
-		"AboutPage" => "AboutPage"
+		"AboutPage" => "AboutPage",
+		"PDF" => "File"
 	);
 	
 	public function getCMSFields_forPopup()
@@ -18,7 +19,7 @@ class Legislation extends DataObject {
 		return new FieldSet(
 			$date_field,
 			new TextField("LegTitle","Title of the Legislation"),
-			new FileField("PDF", "PDF")
+			new FileIFrameField("PDF", "PDF")
 			
 		);
 	}
