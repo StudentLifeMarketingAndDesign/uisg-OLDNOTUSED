@@ -1029,3 +1029,12 @@ padding-top: 5%;
 .legislation{
 	margin-bottom: 20px;
 }
+
+.legislation_block{
+	width: 371px;
+	padding: 10px 20px 20px 20px;
+	margin: 15px;
+	height: 65px;
+	float: left;
+	background-color: #dedede;
+}

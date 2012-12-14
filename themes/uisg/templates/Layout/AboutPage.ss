@@ -21,10 +21,10 @@
 		<% control getLegislation(3) %>
 		<div class="legislation">
 		<h3><a href="$PDF.URL">$LegTitle</a></h3>
-		Updated $Updated.NiceUS
+		updated $Updated.NiceUS
 		</div>
 		<% end_control %>
-		<p>See <a href="about/legislation/">Past Legislation</a></p>
+		<p>See <a href="about/legislation/">Past Governing Documents</a></p>
 		</div>
 		
 		
