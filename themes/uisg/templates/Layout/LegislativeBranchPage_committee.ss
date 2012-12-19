@@ -17,7 +17,7 @@
 
 			<h1>$Title</h1>
 			
-			
+			<% if Image1 %>
 			<div id="slider" class="nivoSlider theme-pascal" style="margin:20px 0 20px 0;">
 					<% if Image1 %>
 						$Image1.CroppedImage(500,250)
@@ -33,6 +33,7 @@
 					<% end_if %>
 			
 			</div>
+			<% end_if %>
 			
 			<div id="committee_description" style="margin:20px 0 20px 0;">
 				$Description

@@ -15,6 +15,7 @@
 			<% if Children %>
 			<div id="branch-people">
 				<h2>Your $MenuTitle Branch:</h2>
+			<div class="clear"></div>
 				<ul>
 					<% control Children %>
 						<li>
