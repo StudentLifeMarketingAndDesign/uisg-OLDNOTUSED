@@ -7,25 +7,24 @@
 		$MetaTags(false)
 		<link rel="shortcut icon" href="/favicon.ico" />
 		
+		
+	
 		<link href='http://fonts.googleapis.com/css?family=Rokkitt&v2' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=EB+Garamond&v2' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="{$ThemeDir}/css/reset.css">
-
+		<link rel="stylesheet" href="division-bar/css/_division-bar.css" />
+		
 		<% require themedCSS(layout) %> 
 		<% require themedCSS(typography) %> 
+		
+		
 	</head>
 	 
 	<body>
-
-	<div id="govt-bar">
-		<div id="govt-bar-content">
-		<a href="http://uiowa.edu/" target="_blank" class="uiowa-logo"><img src="$ThemeDir/images/uiowa.png" /></a>
-		<span class="govt-bar-division"><a href="http://studentlife.uiowa.edu/">Division of Student Life</a>&nbsp; <a href="$BaseHref" class="active-govt-site">UISG</a> <a href="http://ecgps.uiowa.edu">ECGPS</a></span>
-		
-		<div class="clear"></div>
-		</div>
 	
-	</div>
+	<% include DivisionBar %>
+
+	
 	<!-- Header -->
 	<div id="header">
 	
@@ -122,6 +121,6 @@
   })();
 
 </script>
-	
+	<script type="text/javascript" src="{$BaseHref}/division-bar/js/division-bar.js"></script>
 	</body>
 </html>
