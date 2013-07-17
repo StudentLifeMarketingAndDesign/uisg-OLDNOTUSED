@@ -15,7 +15,7 @@
 .typography li {
 	margin-left: 10px;
 	font-size: 18px;
-	list-style-type: square;
+	/*list-style-type: square;*/
 	/*color: #fef8d3;*/
 
 }
@@ -68,20 +68,29 @@
 	/*font-family: 'Rokkit', serif; */
 		font-family: 'EB Garamond', 'Garamond', 'Georgia', serif;
 	font-size: 32px;
-	color: #4f4f4f;
+	color: #a01815;
 	font-weight: bolder;
-	padding: 5px 0;
+	/*padding: 5px 0;
 	/*border-bottom: 1px solid #ddd;*/
 	margin: 10px 0;
 
 }
 
-.typography h3, .typography h3 a {
+/*.typography h3, .typography h3 a {
 font-family: 'Rokkit', serif;
 		/*font-family: 'EB Garamond', 'Garamond', 'Georgia', serif;*/
 
-	font-size: 24px;
+/*	font-size: 24px;
 	color: #086793;
+	padding: 5px 0;
+
+}*/
+.typography h3, .typography h3 a {
+	/*font-family: 'Rokkit', serif;*/
+		font-family: 'EB Garamond', 'Garamond', 'Georgia', serif;
+
+	font-size: 26px;
+	color: #213671;
 	padding: 5px 0;
 
 }
@@ -345,4 +354,21 @@ td ul {
 	color: white;
 	border: none;
 	font-weight: normal;
+}
+.legislation{
+	text-align: center; 
+	margin-bottom: 20px;
+}
+
+.legislation h3 a{
+	color: #a01815;
+}
+
+.legislation_block{
+	width: 371px;
+	padding: 10px 20px 20px 20px;
+	margin: 15px;
+	height: 65px;
+	float: left;
+	background-color: #dedede;
 }
