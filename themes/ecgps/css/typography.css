@@ -1,3 +1,4 @@
+
 .typography *{
 	font-family: 'EB Garamond', 'Garamond', 'Georgia', serif;
 
@@ -26,9 +27,9 @@
 }
 
 .typography ul {
-	line-height: 25px;
+	line-height: 35px;
 	margin-left: 10px;
-	list-style-type: square;
+	list-style-type: circle;
 	list-style: outside;
 }
 
@@ -38,7 +39,7 @@
 }
 
 .typography a {
-	color: #337eb8;
+	color: #a01815;
 	text-decoration: none;
 	/*padding-bottom: 1px;
 	padding-left: 2px;
@@ -49,7 +50,7 @@
 }
 
 .typography a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 
 }
 
@@ -97,6 +98,7 @@ font-family: 'Rokkit', serif;
 }
 
 .typography h3 {
+	color: #213671;
 	margin: 10px 0;
 
 }
@@ -138,6 +140,10 @@ font-family: 'Rokkit', serif;
 		color: #334371;
 }
 
+.typography ol{
+	list-style-type: decimal;
+	list-style-position: inside; 
+}
 #footer a {
 	color: #fef8d3;
 }
@@ -281,10 +287,11 @@ color: white;
 #content1 h1 {
 	font-size: 62px;
 	color: #334371;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 2px solid #ddd;
 	margin-bottom: 20px;
+	margin:20px 0; 
 	font-family: 'Rokkit', 'serif';
-	padding-bottom: 10px;
+	line-height: 72px; 
 	
 
 }

@@ -13,8 +13,8 @@
 			<div id="tagline-link-container" class="span4">
 				<div class="padding">
 					<a class="tagline-link" href="{$BaseHref}about/"><span>learn more</span></a>
-					<a class="tagline-link" href="{$BaseHref}funding-and-grants/"><span>see our grants</span></a>
-					<a class="tagline-link" href="{$BaseHref}news/ecgps-council-meetings/"><span>meetings</span></a>
+					<a class="tagline-link" href="{$BaseHref}2013-uisg-elections//"><span>UISG 2013 Elections</span></a>
+					<a class="tagline-link" href="{$BaseHref}funding/"><span>Funding</span></a>
 				</div>
 
 			</div>
@@ -28,9 +28,12 @@
 			
 			<div class="row-fluid">
 				<div class="span8">
+					<div class="padding">
 					
 						<% include HomePageSlider %>
+					</div>
 						<% include HomePageNews %>		
+					 
 				</div>
 				<div class="span4">
 					<div id="twitter">

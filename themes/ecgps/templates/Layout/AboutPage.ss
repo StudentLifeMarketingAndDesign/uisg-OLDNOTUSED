@@ -1,23 +1,35 @@
-<div id="content"  class="typography padding">
+<div id="content"  class="typography">
 
 	<div id="content1">
-		<h1>About ECGPS</h1>
-				<% if Image %>$Image.SetWidth(800)<% end_if %>
+		
+		<% include Breadcrumbs %>
+		<h1>$Title</h1>
+		<div id="about-social-media">
+			<h2>Stay Connected With UISG!</h2>
+			<ul>
+				<li><a href="http://www.facebook.com/pages/University-of-Iowa-Student-Government/128426757171772">Facebook</a></li>
+				<li><a href="http://twitter.com/#!/uisg">Twitter</a></li>
+			</ul>
+		</div>
+		<% if MainImage %>$MainImage <% end_if %>
 				<div id="about-content">
-				<!--<div id="about-social-media" class="content-feature">
-					<h2>Stay Connected!</h2>
-					<ul>
-						<li><a href="http://www.facebook.com/pages/Executive-Council-of-Graduate-Professional-Students-ECGPS/128878975027">Facebook</a></li>
-						<li>Twitter</li>
-						<li>YouTube</li>
-					</ul>
-				</div>
-				-->
 			$Content
 		</div>
+		<div class="clear"></div>
+		<div id="legislations">
+		<h2><a href="about/legislation/">Governing Documents</a></h2>
+		<% control getLegislation(3) %>
+		<div class="legislation">
+		<h3><a href="$PDF.URL">$LegTitle</a></h3>
+		updated $Updated.NiceUS
+		</div>
+		<% end_control %>
+		<p>See <a href="about/legislation/">Past Governing Documents</a></p>
+		</div>
 		
-
+		
 		<div class="clear"></div>
 		
 		$Form
 	</div>
+</div>
