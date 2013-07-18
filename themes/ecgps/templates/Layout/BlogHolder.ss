@@ -1,13 +1,14 @@
 
 <div id="content"  class="typography padding">
-	
+
 	<div id="content1">
+		<% include Breadcrumbs %>
 		<% if SelectedTag = event %><h1>Events Calendar</h1><% else %><h1>News</h1><% end_if %>
 
 		<div class="row-fluid">
 			<div class="span8">
 				<div class="">
-				<% include BreadCrumbs %>
+				
 			
 				<% if SelectedDate %>
 					<h3><% _t('VIEWINGPOSTEDIN', 'Viewing entries posted in') %> $SelectedDate.Month $SelectedDate.Year</h3>
