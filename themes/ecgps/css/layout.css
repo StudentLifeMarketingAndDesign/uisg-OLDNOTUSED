@@ -95,6 +95,32 @@ h1, h2, h3, h4 {
 	font-size: 1.2em;
 }
 
+tr.odd {
+	background:#ededed;
+}
+
+tr.even{
+	background:#dedede;
+}
+
+tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+td.initiative{
+	padding: 20px;
+}
+
+td.img {
+	padding-bottom: 5px;
+	background-color:#cfcfcf;
+}
+
+.typography td a {
+	color: #334371; 
+}
 /* Old, unused */
 #sub-navigation {
 	float:right;
@@ -112,6 +138,45 @@ h1, h2, h3, h4 {
 
 #sub-navigation li {
 	margin:0;
+}
+
+table#highlighted-initiative{
+	padding:20px;
+	width:100%;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+table#highlighted-initiative h2{
+	font-size: 36px;
+}
+
+table#highlighted-initiative p{
+	font-size: 21px; 
+}
+
+initiative h2{ 
+	font-size:26px; 
+}
+table.branch-initiatives{
+	margin: 0 auto; 
+	margin-top: 10px;
+	width: 97%; 
+}
+
+.branch-initiatives td.img {
+	width: 200px;
+	padding-bottom: 5px;
+	background-color: #cfcfcf;
+}
+
+#hinit{
+	padding: 14px 14px 9px 17px;
+	width: 204px; 
+	background: #dedede;
+}
+
+.typography td{
+	border: 10px solid;
+	border-color: whiteSmoke;
 }
 
 #background-wrapper {
