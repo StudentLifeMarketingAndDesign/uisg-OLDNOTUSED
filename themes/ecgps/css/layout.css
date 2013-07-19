@@ -42,6 +42,7 @@ h1, h2, h3, h4 {
 .navbar{
 	background: url('../images/navigation_background.png');
 	background-repeat: no-repeat;
+	margin-top: 10px; 
 }
 
 .navbar-inner{
@@ -322,6 +323,7 @@ table.branch-initiatives{
 }
 
 #homepage-tagline-container {
+	padding-top: 45px; 
 }
 
 #homepage-tagline {

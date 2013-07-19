@@ -72,8 +72,6 @@
 	font-weight: bolder;
 	/*padding: 5px 0;
 	/*border-bottom: 1px solid #ddd;*/
-	margin: 10px 0;
-
 }
 
 /*.typography h3, .typography h3 a {
@@ -332,6 +330,12 @@ td ul {
 	border: none;
 
 }
+
+.initiative h2 {
+	font-size: 26px; 
+	line-height: 20px; 
+}
+
 
 .tagcloud .not-popular { font-size: 0.5em; }
 .tagcloud .not-very-popular { font-size: 0.6em; }
