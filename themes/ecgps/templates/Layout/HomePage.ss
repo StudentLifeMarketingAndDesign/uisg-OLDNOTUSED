@@ -26,22 +26,27 @@
 		<div id="homepage-feature-container" class="container-fluid padding">
 		
 			<div class="row-fluid">
-				<div class="span8">
+				<div class="span7">
 						
 						<% include HomePageSlider %>
-						<% include HomePageNews %>
+						<div id="homepage-current-initiatives">
+							<h2><a href="{$BaseHref}initiatives/">Current Initiatives</a></h2>
+							<ul id="initiative-list">
+				
+						<% control ChildrenOf(initiatives) %>
+							<li><a href="{$Parent.Link}#{$URLSegment}" <% if FirstLast %>class="$FirstLast"<% end_if %>>$Title</a></li>
+						<% end_control %>
+								</ul>
+						</div>	
 					
 				</div>
-				<div class="span4">
+				<div class="span5">
 				
 					<h2>Comments? Questions?</h2>
 					<p><a href="mailto: uisg@uiowa.edu">Email us at uisg@uiowa.edu</a></p>
-					<div id="twitter">
-					<a class="twitter-timeline" href="https://twitter.com/UISG" data-widget-id="357154084383510528">Tweets by @UISG</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-					</div>
+					<% include HomePageNews %>
 
-					</div>
+				</div>
 			
 			</div>
 			

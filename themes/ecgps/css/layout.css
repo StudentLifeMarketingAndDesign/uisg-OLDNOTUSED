@@ -157,6 +157,13 @@ table#highlighted-initiative p{
 initiative h2{ 
 	font-size:26px; 
 }
+#initiative-list{
+	padding: 5px; 
+}
+
+#initiative-list li {
+	line-height: 32px; 
+}
 table.branch-initiatives{
 	margin: 0 auto; 
 	margin-top: 10px;
@@ -205,6 +212,9 @@ table.branch-initiatives{
 	margin-top:-25px;
 }
 
+#content {
+	padding: 5px; 
+}
 #content img.right {
 	float:right;
 }
@@ -389,21 +399,41 @@ table.branch-initiatives{
 }
 
 #homepage-current-initiatives {
+	margin-top: 20px; 
 	float:left;
-	width:500px;
+	width:100%;
 	background:#fff;
+	
 }
 
 #homepage-current-initiatives h2 {
 	margin:0;
 	padding:0;
+	
 }
+
+#homepage-current-initiatives h2 a{
+	display: block;
+	padding: 10px;
+	color: #213671;
+
+	font-weight: normal;
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+	background: linear-gradient(top, #ffffff 0%,#e5e5e5 100%);
+}
+
 
 /*#homepage-current-initiatives h2 a, #about-social-media h2, #homepage-featured-student h2 a{*/
 .typography .homepage-feature h2,.typography .homepage-feature h2 a,.content-feature h2 {
 	display:block;
 	color:#213671;
-	text-align:center;
+	/*text-align:center;*/
 	font-weight:400;
 	background:#fff;
 /* Old browsers */
@@ -423,6 +453,7 @@ table.branch-initiatives{
 /* W3C */
 	margin:0;
 	padding:0;
+
 }
 
 .typography .homepage-feature h2 a {
@@ -567,7 +598,7 @@ table.branch-initiatives{
 
 #homepage-current-initiatives ul {
 	margin:0;
-	padding:0;
+	padding:5px;
 }
 
 #homepage-contact-form {
@@ -605,6 +636,14 @@ table.branch-initiatives{
 
 #featured-news h2 a {
 	margin:0;
+	display: block;
+	padding: 10px;
+	color: white;
+	
+	font-weight: normal;
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.21, rgb(161,26,24)), color-stop(0.81, rgb(231,39,35)) );
+	background-image: -moz-linear-gradient( center bottom, rgb(161,26,24) 21%, rgb(231,39,35) 81% );
+
 }
 
 #featured-news li {
