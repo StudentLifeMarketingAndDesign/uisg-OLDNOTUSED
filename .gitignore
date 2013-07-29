@@ -2,3 +2,5 @@
 themes/.DS_Store
 themes/uisg/.DS_Store
 themes/uisg/templates/.DS_Store
+assets/
+assets/*
