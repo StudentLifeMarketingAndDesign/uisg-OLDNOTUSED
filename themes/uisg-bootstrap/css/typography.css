@@ -18,13 +18,12 @@ body .typography{
 .typography p {
 	color: #333;
 	margin: 0 0 18px 0;
+
 }
 
 .typography li {
-	margin-left: 10px;
-	list-style-type: square;
+	
 	/*color: #fef8d3;*/
-	line-height: normal;
 
 
 }
@@ -36,9 +35,9 @@ body .typography{
 }
 
 .typography ul {
-	line-height: normal;
-	margin-left: 10px;
-	list-style-type: square;
+	line-height: 35px;
+	margin-left: 20px;
+	list-style-type: circle;
 	list-style: outside;
 }
 
@@ -48,7 +47,7 @@ body .typography{
 }
 
 .typography a {
-	color: #337eb8;
+	color: #a01815;
 	text-decoration: none;
 	/*padding-bottom: 1px;
 	padding-left: 2px;
@@ -77,7 +76,7 @@ body .typography{
 	/*font-family: 'Rokkit', serif; */
 	font-family: 'Lora', 'Garamond', 'Georgia', serif;
 	font-size: 1.3em;
-	color: #4f4f4f;
+	color: #a01815;
 	font-weight: bolder;
 	padding: 5px 0;
 	/*border-bottom: 1px solid #ddd;*/
@@ -171,7 +170,7 @@ font-family: 'Rokkit', serif;
 
 .typography strong {
 		font-weight: bold;
-		color: #333;
+		color: #334371;
 }
 
 .typography #breadcrumbs {
@@ -315,7 +314,7 @@ color: white;
 
 .tagline-link span {
 	font-size: 1.3em;
-	color: #0a88c2;
+	color: #213671;
 	text-shadow: 0 1px 0 #fff;
 
 }
@@ -335,17 +334,17 @@ color: white;
 #content1 h1 {
 	font-size: 1.7em;
 	color: #334371;
-	border-bottom: 1px solid #ddd;
-	margin-bottom: 20px;
+	border-bottom: 2px solid #ddd;
+	margin: 20px 0;
 	font-family: 'Rokkit', 'serif';
-	padding-bottom: 10px;
-	
+	padding-bottom: 16px;
+	line-height: 1;
 
 }
 
 @media (min-width: 768px) {
 	#content1 h1 {
-		font-size: 2.4em;
+		font-size: 62px;
 	}
 }
 
@@ -360,7 +359,7 @@ color: white;
 }
 td { 
 	border: 1px solid #ddd;
-	padding: 0 25px;
+	/*padding: 0 25px;*/
 	font-size: 0.7em;
 }
 

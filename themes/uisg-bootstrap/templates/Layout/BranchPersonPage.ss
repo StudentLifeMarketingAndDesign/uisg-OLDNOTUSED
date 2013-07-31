@@ -8,10 +8,10 @@
 	$Content
 	<% if SchoolYear %><h2>About $FirstName</h2><% end_if %>
 	<ul>
-	<% if SchoolYear %><li><strong>Year in school:</strong> $SchoolYear</li><% end_if %>
-	<% if HometownAndState %><li><strong>Hometown:</strong> $HometownAndState</li><% end_if %>
-	<% if MajorMinor %><li><strong>Major / Minor: </strong>$MajorMinor</li><% end_if %>	
-	<% if Committees %><li><strong>Committee Assignment(s): </strong><% control Committees %><a href="{$Link}">$Title</a><% if Last %><% else %>, <% end_if %><% end_control %></li><% end_if %>
+	<% if SchoolYear %><li class="spacer"><strong>Year in school:</strong> $SchoolYear</li><% end_if %>
+	<% if HometownAndState %><li class="spacer"><strong>Hometown:</strong> $HometownAndState</li><% end_if %>
+	<% if MajorMinor %><li class="spacer"><strong>Major / Minor: </strong>$MajorMinor</li><% end_if %>	
+	<% if Committees %><li class="spacer"><strong>Committee Assignment(s): </strong><% control Committees %><a href="{$Link}">$Title</a><% if Last %><% else %>, <% end_if %><% end_control %></li><% end_if %>
 	</ul>
 	$Form
 	</div>

@@ -43,6 +43,14 @@ body {
 	float: right;
 }
 
+#committee-list{
+	width: 300px; 
+	float: right; 
+	border: 1px solid #ddd;
+	margin-left: 25px; 
+	margin-top: 40px; 
+}
+
 #committee_description p{
 	line-height: 25px;
 }

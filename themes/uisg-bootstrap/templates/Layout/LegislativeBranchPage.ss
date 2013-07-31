@@ -4,26 +4,13 @@
 		<% include Breadcrumbs %>
 		<div id="branch-intro">
 			<h1>$Title</h1>
-			
-		<a class="tagline-link" href="http://uisg.uiowa.edu/branches/legislative/meetings" style="float:right;margin-left:30px"><span>Meetings</span></a>
-		<div class="clear" style="float:right;"></div>
-		<div id="committee-list">
-			<h2>Committees</h2>
-			<ul>
-			<% control AllCommittees %>
-			
-			<li><a href="{$Link}">$Title</a></li>
-			
-			<% end_control %>
-			</ul>
+		<div class="row-fluid">	
+		<div class ="span7">
+		$Content	
 		
-		</div>
-		
-			$Content
-			
-			
-				
 			<table class="speaker">
+			
+		
 				<tbody>
 						<td>
 						<% control Speaker %>
@@ -39,7 +26,23 @@
 						</td>
 				</tbody>
 			</table>
-
+		</div>
+		<div class = "span5">
+		<a class="tagline-link" href="http://uisg.uiowa.edu/branches/legislative/meetings" style="margin-left:30px"><span>Meetings</span></a>
+		<div class="clear" style="float:right;"></div>
+		<div id="committee-list">
+			<h2>Committees</h2>
+			<ul>
+			<% control AllCommittees %>
+			
+			<li><a href="{$Link}" class= "spacer">$Title</a></li>
+			
+			<% end_control %>
+			</ul>
+		
+		</div>
+		</div>	
+		</div>	
 			<!--<% if MainImage %><img src="http://dummyimage.com/400x400" /><% end_if %>-->
 			
 			<div class="clear"></div>
