@@ -105,7 +105,7 @@ body {
 
 #nav li ul {
 	position: absolute;
-	background: #ac1b18;
+	background: #E0B94E;
 	float: none;
 	width: 7em;
 	left: -999em;
@@ -143,9 +143,9 @@ body {
 }
 
 #nav li a span {
-	border-top: 1px solid #d96461;
-	border-right: 1px solid #d96461;
-	border-bottom: 1px solid #d96461;
+	border-top: 1px solid #E0B94E;
+	border-right: 1px solid #E0B94E;
+	border-bottom: 1px solid #E0B94E;
 	display: block;
 	background: url('../images/button_background.png');
 	height: 50px;
@@ -156,7 +156,7 @@ body {
 
 #nav .first{
 
-	border-left: 1px solid #d96461;
+	border-left: 1px solid #E0B94E;
 }
 
 #nav li a.section span, #nav li a.section span:hover, #nav li a.section span:active {

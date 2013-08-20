@@ -57,7 +57,7 @@
 			<% if AllCommittees %>
 			
 			<% control AllCommittees %>
-			<div class="committee">
+			<div class="committese">
 			<% if Persons %>
 			<div class="committee-header">
 				<!--<h2 id="committee-$ID">$Title</h2>
