@@ -57,25 +57,52 @@
 			<div class="committee">
 			<% if Persons %>
 			<div class="committee-header">
-				<!--<h2 id="committee-$ID">$Title</h2>
-				<span class="btt-head"><a href="#">Back to Top</a></span>-->
+				<h2 id="committee-$ID">$Title</h2>
+				<span class="btt-head"><a href="#">Back to Top</a></span>
 				<div style="clear:both"></div>
 
 			</div>
-
-				<table class="branch-people">
+          <ul class="staff-list">
+            <% control BranchPersonPages %>
+                  <li>
+                        <% if MainImage %>
+                        <a href="$Link" class="staff-link">
+                              <% control MainImage %>
+                              	<% control SetRatioSize(251,167) %>
+							  		<img src="$URL" alt="$FirstName $LastName" class="staff-img">
+                              	<% end_control %>
+                              <% end_control %>
+                        </a>
+                        <% else %>
+                        <a href="$Link" class="staff-link">
+                              
+                              <img src="{$ThemeDir}/images/staff-placeholder.gif" alt="$FirstName $LastName" class="staff-img">
+                        </a>
+                        <% end_if %>
+                        <p class="staff-name">
+                              <a href="$Link">$FirstName $LastName</a>
+                              <% if Position %><small class="staff-position">$Position</small><% end_if %>
+                        </p>
+                  </li>
+            <% end_control %>
+                  <li class="filler"></li>
+                  <li class="filler"></li>
+            </ul>
+				<!--<table class="branch-people">
 					<tbody>
 						
 						<% control BranchPersonPages %>
 							<tr class="$EvenOdd">
 								<td class="img"><% if MainImage %>$MainImage.CroppedImage(400,260)<% else %><span>No Image Available</span><% end_if %></td>
 								<td class="name"><span class="pos">$Position</span><br /><a href="$Link">$FirstName $LastName</a></span></td>
-								<!--<td class="com"><span class="com-head">Committee(s):</span><br /><% if Committees %><ul><% control Committees %><li>$Title</li><% end_control %></ul><% end_if %></td>-->
+								<td class="com"><span class="com-head">Committee(s):</span><br /><% if Committees %><ul><% control Committees %><li>$Title</li><% end_control %></ul><% end_if %></td>
 							
 							</tr>
 						<% end_control %>
 					</tbody>	
-				</table>
+				</table>-->
+				
+				
 				<!--<span class="btt"><a href="#">Back to Top</a></span>-->
 				
 			<% end_if %><!-- end if branchpersonpages -->
@@ -96,5 +123,3 @@
 
 	
 	</div>
-
-</div>

@@ -7,7 +7,7 @@
 									<li>
 									<h3><a href="$Link">$Title</a></h3>
 									<p class="posted-by"><a href="$Link">Posted on $Date.Format(F j)</a></p>
-									<p class="blog-content">$Content.BigSummary(25)</p>
+									<p class="blog-content">$Content.Summary(50)</p>
 									<p><a href="$Link" class="read-more-link">Read More</a></p>
 									<div style="clear: right"></div>
 									</li>

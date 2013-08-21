@@ -1,10 +1,7 @@
 <div id="content"  class="typography padding">
 
 	<div id="content1">
-	
-	
-
-		<div id="BlogContent" class="typography padding">
+		<div id="BlogContent" class="typography">
 			<div id="breadcrumbs"><% include BreadCrumbs %></div>
 			
 			<div class="blogEntry">

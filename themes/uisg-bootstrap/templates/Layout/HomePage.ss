@@ -34,7 +34,7 @@
 							<ul id="initiative-list">
 				
 						<% control ChildrenOf(initiatives) %>
-							<li><a href="{$Parent.Link}#{$URLSegment}" <% if FirstLast %>class="$FirstLast"<% end_if %>>$Title</a></li>
+							<li><a href="$Link" <% if FirstLast %>class="$FirstLast"<% end_if %>>$Title</a></li>
 						<% end_control %>
 								</ul>
 						</div>	

@@ -39,7 +39,7 @@ body .typography{
 	line-height: normal;
 	margin-left: 10px;
 	list-style-type: square;
-	list-style: outside;
+	list-style: inside;
 }
 
 .typograph p ul li {
@@ -360,8 +360,7 @@ color: white;
 }
 td { 
 	border: 1px solid #ddd;
-	padding: 0 25px;
-	font-size: 0.7em;
+	padding: 0 5px;
 }
 
 td ul {

@@ -1,24 +1,3 @@
-<!--<% if Children %>
-	<div id="slider" class="nivoSlider theme-pascal">
-		<% control Children %>
-			<% if LinkURL %>
-				<a href="$LinkURL"><% control Image.SetWidth(920) %><img src="$URL" title="#htmlcaption-{$Pos}" /><% end_control %></a>
-			<% else %>
-				<% control Image.SetWidth(920) %><img src="$Image.URL" title="#htmlcaption-{$Pos}" /><% end_control %>
-			<% end_if %>
-		<% end_control %>
-	</div>
-	<% control Children %>
-		<div id="htmlcaption-{$Pos}" class="nivo-html-caption">
-			<% if LinkURL %>
-			<a href="$LinkURL" target="_blank">$Caption</a>
-			<% else %>
-			$Caption
-			<% end_if %>
-		</div>
-	<% end_control %>
-<% end_if %>-->
-
 <% if Children %>
 	<div id="myCarousel" class="carousel slide">
 	  <ol class="carousel-indicators">
@@ -35,9 +14,11 @@
 			<% else %>
 				<% control Image.SetWidth(920) %><img src="$URL" title="#htmlcaption-{$Pos}" /><% end_control %>
 			<% end_if %>
-			<div class="carousel-caption">
-				$Caption
-            </div>
+			<% if Caption %>
+				<div class="carousel-caption">
+					$Caption
+	            </div>
+	         <% end_if %>
 		</div>
 	<% end_control %>
 	  </div>
