@@ -44,8 +44,7 @@ h1, h2, h3, h4 {
 
 
 .navbar{
-	background: url('../images/navigation_background.png');
-	background-repeat: no-repeat;
+	bsdfabackground-repeat: no-repeat;
 	/*margin-top: 10px; */
 	margin-bottom: 0;
 }
@@ -116,8 +115,25 @@ h1, h2, h3, h4 {
 	font-size: 1.2em;
 }
 
+table.branch-people{
+	font-size: 18px;
+	list-style: none;
+	padding: 0 10px;
+	margin-top: 12px;
+	margin-bottom: 17x;
+	margin-left: 0;
+	line-height: 25px;
+	float: left;
+	width:100%;
+}
+
 tr.odd {
 	background:#ededed;
+}
+
+td.name{
+	width:255px;
+	padding: 80px;
 }
 
 tr.even{
@@ -135,8 +151,12 @@ td.initiative{
 }
 
 td.img {
-	padding-bottom: 5px;
+	width: 250px; 
 	background-color:#cfcfcf;
+}
+
+td{
+	padding: 10px; 
 }
 
 .typography td a {
@@ -205,6 +225,7 @@ table.branch-initiatives{
 .typography td{
 	border: 10px solid;
 	border-color: whiteSmoke;
+	font-size: 1em; 
 }
 
 #background-wrapper {
@@ -231,8 +252,8 @@ table.branch-initiatives{
 	-webkit-box-shadow:#b7b7b7 1px 1px 6px 1px inset;
 }
 
-#content {
-	
+#content ul{
+	padding: 5px; 
 }
 #content img.right {
 	float:right;
@@ -240,6 +261,23 @@ table.branch-initiatives{
 
 #content img.left {
 	float:left;
+}
+
+#committee-list{
+	
+
+	border: 1px solid #ddd;
+	margin-left: 25px; 
+	margin-top: 40px; 
+	padding-left: 10px; 
+	background-color: white;
+}
+
+#committee-list li{
+	color: #a01815;
+}
+#committee-list h2{
+	text-align: center;
 }
 
 .featured-student-listing {
@@ -255,7 +293,7 @@ table.branch-initiatives{
 }
 
 #content1 {
-/*	padding: 20px 40px;*/
+	padding: 20px 40px;
 }
 
 /*Blog Styles */
@@ -319,15 +357,16 @@ table.branch-initiatives{
 /* Branch Page */
 #branch-intro {
 	border-bottom:1px solid #ddd;
+	padding-bottom: 20px; 
 }
 
 #branch-intro p {
 	float:left;
-	width:450px;
+
 }
 
 #branch-intro img {
-	float:right;
+
 }
 
 #branch-news {
@@ -756,6 +795,15 @@ table.branch-initiatives{
 	background-size: cover;
 }
 
+.speakersec{
+	display:block;
+	text-align: center;
+	width:230px;
+	padding-top: 15px;
+	clear:both;
+}
+
+
 .twtr-widget {
 /*float: left;*/
 /*margin-left: 20px;*/
@@ -885,3 +933,29 @@ a.active-govt-site {
 	color: #213671; 
 }
 
+.pos {
+	font-size: .8em; 
+	float: left; 
+}
+.name a{
+	font-size: 1.5em;
+}
+
+img.branch-person{
+	float: right;
+}
+.spacer{
+	line-height: 35px; 
+}
+
+td.img span{
+	color: #aaa;
+	font-family: Helvetica, sans-serif;
+	margin-left: 60px;
+	font-weight: bold;
+}
+
+#committee_description {
+width: 350px;
+float: right;
+}
