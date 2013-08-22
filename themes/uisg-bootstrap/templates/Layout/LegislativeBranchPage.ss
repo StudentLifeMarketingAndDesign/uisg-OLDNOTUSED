@@ -52,26 +52,14 @@
 
 		
 		<div id="branch-content">
-		
-			<div style="clear:both"></div>
-			<% if AllCommittees %>
-			
-			<% control AllCommittees %>
-			<div class="committese">
-			<% if Persons %>
-			<div class="committee-header">
-				<h2 id="committee-$ID">$Title</h2>
-				<span class="btt-head"><a href="#">Back to Top</a></span>
-				<div style="clear:both"></div>
 
-			</div>
           <ul class="staff-list">
-            <% control BranchPersonPages %>
+            <% control Children %>
                   <li>
                         <% if MainImage %>
                         <a href="$Link" class="staff-link">
                               <% control MainImage %>
-                              	<% control SetRatioSize(251,167) %>
+                              	<% control SetRatioSize(250,250) %>
 							  		<img src="$URL" alt="$FirstName $LastName" class="staff-img">
                               	<% end_control %>
                               <% end_control %>
@@ -108,13 +96,10 @@
 				
 				<!--<span class="btt"><a href="#">Back to Top</a></span>-->
 				
-			<% end_if %><!-- end if branchpersonpages -->
-					</div><!-- end committees div -->
 
-		<% end_control %><!-- end control allcommittees -->
+				
 
-			<% end_if %><!-- end if allcommittees -->
-			
+
 			
 			<div class="clear"></div>
 		
