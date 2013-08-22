@@ -10,7 +10,7 @@ body .typography{
 
 @media (min-width: 768px) {
 	body .typography{
-		font-size: 1.2em;
+		font-size: 1.3em;
 	}
 }
 
@@ -18,12 +18,13 @@ body .typography{
 .typography p {
 	color: #333;
 	margin: 0 0 18px 0;
-
 }
 
 .typography li {
-	
+	margin-left: 10px;
+	list-style-type: square;
 	/*color: #fef8d3;*/
+	line-height: normal;
 
 
 }
@@ -38,7 +39,7 @@ body .typography{
 	line-height: normal;
 	margin-left: 10px;
 	list-style-type: square;
-	list-style: inside;
+	list-style: outside;
 }
 
 .typograph p ul li {
@@ -47,7 +48,7 @@ body .typography{
 }
 
 .typography a {
-	color: #a01815;
+	color: #337eb8;
 	text-decoration: none;
 	/*padding-bottom: 1px;
 	padding-left: 2px;
@@ -76,7 +77,7 @@ body .typography{
 	/*font-family: 'Rokkit', serif; */
 	font-family: 'Lora', 'Garamond', 'Georgia', serif;
 	font-size: 1.3em;
-	color: #a01815;
+	color: #4f4f4f;
 	font-weight: bolder;
 	padding: 5px 0;
 	/*border-bottom: 1px solid #ddd;*/
@@ -87,7 +88,7 @@ body .typography{
 font-family: 'Rokkit', serif;
 		/*font-family: 'Lora', 'Garamond', 'Georgia', serif;*/
 	font-size: 1.1em;
-	
+	line-height: normal;
 	color: #086793;
 	padding: 5px 0;
 
@@ -100,7 +101,7 @@ font-family: 'Rokkit', serif;
 
 @media (min-width: 768px) {
 .typography h2 {
-	font-size: 1.7em;
+	font-size: 1.5em;
 }
 .typography h3 {
 	font-size: 1.3em;
@@ -113,18 +114,6 @@ font-family: 'Rokkit', serif;
 	line-height: 5px;
 	font-size: 16px;
 
-}
-
-.typography .tagcloud {
-	font-size: 0.6em;
-}
-
-.typography .tagcloud a{
-	background: #337eb8;
-	color: white;
-	padding: 0.3em;
-	margin: 0.2em;
-	display: block;
 }
 
 .typography h3 {
@@ -170,7 +159,7 @@ font-family: 'Rokkit', serif;
 
 .typography strong {
 		font-weight: bold;
-		color: #334371;
+		color: #333;
 }
 
 .typography #breadcrumbs {
@@ -314,7 +303,7 @@ color: white;
 
 .tagline-link span {
 	font-size: 1.3em;
-	color: #213671;
+	color: #0a88c2;
 	text-shadow: 0 1px 0 #fff;
 
 }
@@ -324,27 +313,33 @@ color: white;
 }
 @media (min-width: 768px) {
 	.typography #homepage-tagline p {
-		font-size:1.7em;
+		font-size:1.5em;
 	}
 	.tagline-link span {
 		font-size: 1.8em;
 	}
 }
+@media (min-width: 1100px) {
+	.typography #homepage-tagline p {
+		font-size:1.8em;
+	}
+
+}
 
 #content1 h1 {
 	font-size: 1.7em;
 	color: #334371;
-	border-bottom: 2px solid #ddd;
-	margin: 20px 0;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
 	font-family: 'Rokkit', 'serif';
-	padding-bottom: 16px;
-	line-height: 1;
+	padding-bottom: 10px;
+	
 
 }
 
 @media (min-width: 768px) {
 	#content1 h1 {
-		font-size: 62px;
+		font-size: 2.4em;
 	}
 }
 
@@ -359,7 +354,8 @@ color: white;
 }
 td { 
 	border: 1px solid #ddd;
-	padding: 0 5px;
+	padding: 0 25px;
+	font-size: 0.7em;
 }
 
 td ul {
@@ -371,6 +367,7 @@ td ul {
 
 .typography td h2 {
 	border: none;
+	line-height: normal;
 
 }
 
@@ -386,13 +383,11 @@ td ul {
 
 }
 
-
-.theme-pascal .nivo-caption p {
-	font-size: 16px;
+.typography a.carousel-control {
+	font-family: Arial, sans;
+	color: white;
 }
 
-.theme-pascal .nivo-caption p a{
-	color: white;
-	border: none;
-	font-weight: normal;
+.typography a.carousel-control:hover{
+	text-decoration: none;
 }

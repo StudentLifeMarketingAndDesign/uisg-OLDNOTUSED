@@ -11,4 +11,3 @@
 		</div>
 	<% end_control %>
 	</div>
-</div>

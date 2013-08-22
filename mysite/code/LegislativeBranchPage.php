@@ -71,9 +71,8 @@ class LegislativeBranchPage_Controller extends BranchPage_Controller {
 	);
 	
 		public function Speaker(){
-
-			$speaker = DataObject::get_one("BranchPersonPage", "Position = 'Speaker'");
-
+		
+			$speaker = DataObject::get_one("BranchPersonPage", "Position LIKE '%Speaker%'");
 			if($speaker){
 				return $speaker;
 				

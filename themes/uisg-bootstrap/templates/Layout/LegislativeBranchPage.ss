@@ -7,28 +7,25 @@
 		<div class="row-fluid">	
 		<div class ="span7">
 		$Content	
-		
-			<table class="speaker">
-			
-		
-				<tbody>
-						<td>
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span6">
 						<% control Speaker %>
-						<a href="$Link">$MainImage.SetRatioSize(230,267)</a>
-						<a href="$Link"><span class="speakersec">$Position $FirstName $LastName</span></a>
+							<a href="$Link">$MainImage.CroppedImage(325,400)</a>
+							<a href="$Link"><span class="speakersec">$Position<br />$FirstName $LastName</span></a>
 						<% end_control %>
-						</td>
-						<td>
+					</div>
+					<div class="span6">
 						<% control Secretary %>
-						<a href="$Link">$MainImage.SetRatioSize(230,267)</a>
-						<a href="$Link"><span class="speakersec">$Position $FirstName $LastName</span></a>
+							<a href="$Link">$MainImage.CroppedImage(325,400)</a>
+							<a href="$Link"><span class="speakersec">$Position<br />$FirstName $LastName</span></a>
 						<% end_control %>
-						</td>
-				</tbody>
-			</table>
-		</div>
+					</div><!-- end span6 -->
+				</div><!-- end row-fluid -->
+			</div><!-- end container-fluid -->
+		</div><!-- end span7 -->
 		<div class = "span5">
-		<a class="tagline-link" href="http://uisg.uiowa.edu/branches/legislative/meetings" style="margin-left:30px"><span>Meetings</span></a>
+		<a class="tagline-link" href="branches/legislative/meetings"><span>Meetings</span></a>
 		<div class="clear" style="float:right;"></div>
 		<div id="committee-list">
 			<h2>Committees</h2>
@@ -40,10 +37,9 @@
 			<% end_control %>
 			</ul>
 		
-		</div>
+		</div><!-- end committee-list -->
 		</div>	
 		</div>	
-			<!--<% if MainImage %><img src="http://dummyimage.com/400x400" /><% end_if %>-->
 			
 			<div class="clear"></div>
 			
@@ -59,7 +55,7 @@
                         <% if MainImage %>
                         <a href="$Link" class="staff-link">
                               <% control MainImage %>
-                              	<% control SetRatioSize(250,250) %>
+                              	<% control CroppedImage(325,400) %>
 							  		<img src="$URL" alt="$FirstName $LastName" class="staff-img">
                               	<% end_control %>
                               <% end_control %>

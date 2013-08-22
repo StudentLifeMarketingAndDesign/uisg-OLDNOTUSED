@@ -1,5 +1,5 @@
 <?php
-class PlatformInitiativePageTwoCol extends Page {
+class PlatformInitiativePageTwoCol extends PlatformInitiativePage {
 
 	public static $db = array(
 	
@@ -53,7 +53,7 @@ class PlatformInitiativePageTwoCol extends Page {
 	
 
 }
-class PlatformInitiativePageTwoCol_Controller extends Page_Controller {
+class PlatformInitiativePageTwoCol_Controller extends PlatformInitiativePage_Controller {
 
 	public static $allowed_actions = array (
 	);

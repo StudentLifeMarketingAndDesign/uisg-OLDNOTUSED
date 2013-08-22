@@ -20,21 +20,7 @@
 	<table id="committee-$ID" class="branch-initiatives">
 					<tbody>
 						<% control Children %>
-							<tr class="$EvenOdd">
-								<td class="img">
-									<a href="$Link">$MainImage.CroppedImage(200,100)</a>
-								</td>
-								<td class="initiative">
-									<a name="$URLSegment"></a>
-									<a href="$Link"><h2>$MenuTitle</h2></a>
-									<% if Teaser %>
-									<p>$Teaser</p>
-									<% else %>
-									<p>Learn about $MenuTitle!</p>
-									<% end_if %>
-								</td>
-							</tr>
-
+							<% include InitiativeRow %>
 						<% end_control %>
 					</tbody>
 	</table>

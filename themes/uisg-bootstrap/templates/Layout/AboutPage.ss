@@ -26,11 +26,7 @@
 				<div id="about-social-media" class = "row-fluid">
 			
 			<h2 style="margin-top:0px;">Stay Connected With UISG!</h2>
-			
-			<ul>
-				<li><a href="http://www.facebook.com/pages/University-of-Iowa-Student-Government/128426757171772">Facebook</a></li>
-				<li><a href="http://twitter.com/#!/uisg">Twitter</a></li>
-			</ul>
+			<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fuistudentgov%3Ffref%3Dts&amp;width=400&amp;height=590&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=false&amp;appId=127918570561161" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:590px; margin: auto; display: block;" allowTransparency="true"></iframe>
 		</div>
 		
 		

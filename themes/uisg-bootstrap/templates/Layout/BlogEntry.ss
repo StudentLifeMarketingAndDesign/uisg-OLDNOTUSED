@@ -1,9 +1,7 @@
 <div id="content"  class="typography padding">
 
 	<div id="content1">
-		<div id="BlogContent" class="typography">
-			<div id="breadcrumbs"><% include BreadCrumbs %></div>
-			
+		<div id="BlogContent">
 			<div class="blogEntry">
 				<h2 class="postTitle">$Title</h2>
 				<p class="authorDate"> Posted on $Date.Format(F j) </p>
