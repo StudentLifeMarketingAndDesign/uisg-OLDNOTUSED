@@ -28,37 +28,55 @@
 			<div class="row-fluid">
 				<div class="span7">
 						
-						<% include HomePageSlider %>
-						<!--<div id="homepage-current-initiatives">
-							<h2><a href="{$BaseHref}initiatives/">Current Initiatives</a></h2>
-							<ul id="initiative-list">
-				
-						<% control ChildrenOf(initiatives) %>
-							<li><a href="$Link" <% if FirstLast %>class="$FirstLast"<% end_if %>>$Title</a></li>
-						<% end_control %>
-								</ul>
-						</div>	-->
+					<% include HomePageSlider %>
+					
+					<h2>Our Initiatives</h2>
+	
 					<table class="branch-initiatives homepage">
 					<tbody>
-						<% control FeaturedInitiative1 %>
-							<% include InitiativeRow %>
-						<% end_control %>
-						<% control FeaturedInitiative2 %>
-							<% include InitiativeRow %>
-						<% end_control %>
-						<% control FeaturedInitiative3 %>
-							<% include InitiativeRow %>
-						<% end_control %>
-						<% control FeaturedInitiative4 %>
-							<% include InitiativeRow %>
-						<% end_control %>
-						<% control FeaturedInitiative5 %>
-							<% include InitiativeRow %>
-						<% end_control %>
+						<% if FeaturedInitiative1 %>
+							<% control FeaturedInitiative1 %>
+								<% include InitiativeRow %>
+							<% end_control %>
+						<% end_if %>
+						
+						<% if FeaturedInitiative2 %>
+							<% control FeaturedInitiative2 %>
+								<% include InitiativeRow %>
+							<% end_control %>
+						<% end_if %>
+						
+						<% if FeaturedInitiative3 %>
+							<% control FeaturedInitiative3 %>
+								<% include InitiativeRow %>
+							<% end_control %>
+						<% end_if %>
+						
+						<% if FeaturedInitiative4 %>
+							<% control FeaturedInitiative4 %>
+								<% include InitiativeRow %>
+							<% end_control %>
+						<% end_if %>
+						
+						<% if FeaturedInitiative5 %>
+							<% control FeaturedInitiative5 %>
+								<% include InitiativeRow %>
+							<% end_control %>
+						<% end_if %>
+						
+
+						<tr>
+
+						<td class="initiative" colspan="2">
+							<a href="initiatives/"><h2>See all of our initiatives</h2></a>
+						
+						</td>
+					
+						</tr>
 					</tbody>
 					</table>
 
-
+					
 				</div>
 				<div class="span5">
 				

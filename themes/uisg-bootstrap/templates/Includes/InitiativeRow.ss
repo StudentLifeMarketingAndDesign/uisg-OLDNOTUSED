@@ -1,12 +1,12 @@
 <tr class="$EvenOdd">
 	<% if MainImage %>
 	<td class="img">
-		<a href="$Link">$MainImage.CroppedImage(200,100)</a>
+		<a href="$Link">$MainImage.CroppedImage(275,150)</a>
 	</td>
 	
 	<% else_if Image1 %>
 	<td class="img">
-		<a href="$Link">$MainImage.CroppedImage(200,100)</a>
+		<a href="$Link">$MainImage.CroppedImage(275,150)</a>
 	</td>
 	<% end_if %>
 	<td class="initiative" <% if MainImage %><% else_if Image1 %><% else %>colspan="2"<% end_if %>>
