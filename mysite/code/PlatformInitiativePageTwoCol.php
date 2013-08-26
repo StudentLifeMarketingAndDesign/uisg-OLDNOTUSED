@@ -28,7 +28,7 @@ class PlatformInitiativePageTwoCol extends PlatformInitiativePage {
 		$fields = parent::getCMSFields();
 		
 		$fields->addFieldToTab('Root.Content.Main', new TextField('Teaser','Teaser Text'));
-		$fields->addFieldToTab('Root.Content.Main', new ImageField('MainImage','Main Image'));
+		//$fields->addFieldToTab('Root.Content.Main', new ImageField('MainImage','Main Image'));
 		$fields->addFieldToTab('Root.Content.Main', new ImageField('Banner','Banner Image'));
 		$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('Col1','First Column'));
 		$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('Col2','Second Column'));

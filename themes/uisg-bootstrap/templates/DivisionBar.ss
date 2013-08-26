@@ -1,6 +1,6 @@
 <% require css(division-bar/css/_division-bar.css) %>
 <div class="division-topbar">
-    <div class="wrapper container">
+    <div class="container">
         <div class="division-directory clearfix">
             <div class="dosl-wrapper clearfix">
                 <a href="http://studentlife.uiowa.edu/" class="dosl">

@@ -293,6 +293,9 @@ color: white;
 	line-height: normal;
 }
 
+.typography #homepage-tagline strong {
+	color: #0A88C2;
+}
 
 .typography #homepage-tagline p a {
 	color: #0a88c2;

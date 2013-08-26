@@ -12,9 +12,18 @@
 			
 			<div id="tagline-link-container" class="span4">
 			
-				<a class="tagline-link" href="{$BaseHref}about/"><span>learn more</span></a>
-					<a class="tagline-link" href="{$BaseHref}2013-uisg-elections//"><span>UISG 2013 Elections</span></a>
-					<a class="tagline-link" href="{$BaseHref}funding/"><span>Funding</span></a>
+				
+			<% if HomePageLinkText1 %>
+			<% if HomePageLinkURL1 %> 
+			<a class="tagline-link" href="{$HomePageLinkURL1}"><span>$HomePageLinkText1</span></a>
+			<% end_if %>
+			<% end_if %>
+			
+			<% if HomePageLinkText2 %>
+			<% if HomePageLinkURL2 %> 
+			<a class="tagline-link" href="{$HomePageLinkURL2}"><span>$HomePageLinkText2</span></a>
+			<% end_if %>
+			<% end_if %>
 			
 
 			</div>

@@ -51,7 +51,7 @@
 						
 						<% control BranchPersonPages %>
 							<tr class="$EvenOdd">
-								<td class="img"><% if MainImage %>$MainImage.CroppedImage(400,260)<% else %><span>No Image Available</span><% end_if %></td>
+								<td class="img"><% if MainImage %>$MainImage.CroppedImage(325,400)<% else %><span>No Image Available</span><% end_if %></td>
 								<td class="name"><span class="pos">$Position</span><br /><a href="$Link">$FirstName $LastName</a></span></td>
 								<!--<td class="com"><span class="com-head">Committee(s):</span><br /><% if Committees %><ul><% control Committees %><li>$Title</li><% end_control %></ul><% end_if %></td>-->
 							
@@ -64,6 +64,6 @@
 			</div>
 
 		</div>
-	</div>
+
 
 <% end_control %>
