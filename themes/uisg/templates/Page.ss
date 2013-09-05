@@ -47,6 +47,12 @@
 		
 						<% end_control %>
 					</ul>
+					<!--<% if $SearchForm %>
+						<span class="search-dropdown-icon">L</span>
+						<div class="search-bar">
+							$SearchForm
+						</div>
+					<% end_if %>-->
 				<div class="clear-left"></div>
 	
 				</div>
