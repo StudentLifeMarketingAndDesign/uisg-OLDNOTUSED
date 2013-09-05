@@ -4,11 +4,7 @@
 		<% include Breadcrumbs %>
 
 	<h1>$FirstName $LastName<% if Position %>, $Position<% end_if %></h1>
-	<% if MainImage %>
-		<% control MainImage.SetWidth(300) %>
-		<img src="$URL" class="branch-person" />
-		<% end_control %>
-	<% end_if %>
+	<% if MainImage %><img src="$MainImage.URL" class="branch-person" /><% end_if %>
 	$Content
 	<% if SchoolYear %><h2>About $FirstName</h2><% end_if %>
 	<ul>
