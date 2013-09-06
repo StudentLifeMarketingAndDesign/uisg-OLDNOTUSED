@@ -29,7 +29,7 @@
 	<div id="header">
 	
 		<div id="header-content">
-				<a href="$BaseURL"><img src="$ThemeDir/images/logo.png" /></a>
+				
 				
 				<div id="nav-container">
 					<ul id="nav">
@@ -47,12 +47,7 @@
 		
 						<% end_control %>
 					</ul>
-					<!--<% if $SearchForm %>
-						<span class="search-dropdown-icon">L</span>
-						<div class="search-bar">
-							$SearchForm
-						</div>
-					<% end_if %>-->
+				
 				<div class="clear-left"></div>
 	
 				</div>

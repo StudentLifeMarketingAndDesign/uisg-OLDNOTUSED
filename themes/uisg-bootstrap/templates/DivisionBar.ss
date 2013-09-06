@@ -44,9 +44,6 @@
             <a href="#" class="directory-toggle">
                 <img src="{$BaseHref}/division-bar/images/division-bar/division_studentlife.png" alt="Division of Student Life" width="224">
             </a>
-		    <% if SearchForm %>
-		    	<a href="#" class="search-toggle">Search</a>
-		    <% end_if %>
         </div>
         <% if SearchForm %>
         <div class="division-search">

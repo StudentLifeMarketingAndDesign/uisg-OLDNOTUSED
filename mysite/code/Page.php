@@ -91,7 +91,18 @@ class Page_Controller extends ContentController {
         //return to submitted message
         Director::redirect("contact-success/");
     }
-
+    
+    function results($data, $form){
+	    $data = array (
+	    	'Results' => $form->getResults(),
+	    	'Query' => $form->getSearchQuery(),
+	    	'Title' => 'Search Results'
+	    );
+	    $this->Query = $form->getSearchQuery();
+	    
+	    return $this->customise($data)->renderWith(array('Page_results', 'Page'));
+	    
+    }
 
 	public function init() {
 		parent::init();

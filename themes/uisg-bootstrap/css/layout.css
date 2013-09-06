@@ -20,6 +20,24 @@ h1, h2, h3, h4 {
 	position:relative;
 }
 
+#btnCtrl {
+	background-color: #6B6B6B;
+	background-image: linear-gradient(to bottom, #747272, #838383);
+}
+/*controls color of little expander button*/
+#btnCtrl:hover {
+	background-position: 0px; 
+}
+/*elements within branch dropdwon*/
+#SubBrnch {
+	color: #eee;
+	text-shadow: rgba(59, 59, 59, 0.76) 1px 1px 2px;
+}
+
+.division-search{
+	padding-right: 10px; 
+}
+
 #header img {
 /*margin-top: 30px;*/
 	margin:0;

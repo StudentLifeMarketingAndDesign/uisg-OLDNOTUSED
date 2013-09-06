@@ -50,7 +50,7 @@
 				    <div class="container">
 				 
 				      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-				      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				      <a id = "btnCtrl" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
@@ -65,7 +65,7 @@
 									<% if URLSegment = branches %>
 										<ul class="dropdown-menu">
 										<% control Children %>
-											<li><a href="$Link">$MenuTitle</a></li>
+											<li><a id="SubBrnch" href="$Link">$MenuTitle</a></li>
 										<% end_control %>
 										</ul>
 									<% end_if %>
