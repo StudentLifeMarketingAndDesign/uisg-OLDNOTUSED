@@ -10,6 +10,8 @@
 		<% control Meeting %>
 			<h1>Meeting Notes for $Date.Format(F d)</h1>
 			$Notes
+			
+			
 		<% end_control %>
 	<% else %>
 		<h1>Meetings</h1>

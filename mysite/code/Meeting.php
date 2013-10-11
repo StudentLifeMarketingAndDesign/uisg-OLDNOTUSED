@@ -7,14 +7,18 @@ class Meeting extends DataObject {
 		"Time" => "Text",
 		"Type" => "Text",
 		"Notes" => "HTMLText",
-		"Location" => "Text"
+		"Location" => "Text",
 	
+
 	);
 	public static $defaults = array(
 		"Location" => "University Capitol Centre 2520D"
 	);
 	public static $has_one = array(
-		"LegislativeBranchPage" => "LegislativeBranchPage"
+		"Agenda" => "File",
+		"Legislation1" => "File",
+		"Legislation2" => "File"
+		
 	);
 	
 	public function getCMSFields_forPopup()
@@ -22,7 +26,7 @@ class Meeting extends DataObject {
 	
 		$date_field = new DateField("Date");
 		$date_field->setConfig("showcalendar", true);
-	
+		
 		$meetingTypes = array ("General Senate Meeting" => "General Senate Meeting", "Committee Meeting" => "Committee Meeting");
 		return new FieldSet(
 			$date_field,
@@ -31,8 +35,11 @@ class Meeting extends DataObject {
 
 			new DropdownField("Type","Type of the Meeting", $meetingTypes),
 			new TextField("Title","Title of the Meeting (optional)"),
+			//new FileField("Agenda", "Upload Agenda here"),
+			//new FileField("Legislation1", "Upload Legislation"),
+			//new FileField("Legislation2", "Upload Optional Legislation"),
 			new SimpleTinyMCEField("Notes", "Meeting Notes")
-			
+	
 		);
 	}
 
