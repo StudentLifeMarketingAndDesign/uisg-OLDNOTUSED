@@ -44,7 +44,7 @@ class Meeting extends DataObject {
 	}
 
 	public function Link(){
-	        if($LegislativeBranchPage = $this->LegislativeBranchPage())
+	        if($LegislativeBranchPage = DataObject::get_one("LegislativeBranchPage"))
 	        {
 	            $Action = 'meetings/' . $this->ID;
 	            return $LegislativeBranchPage->Link($Action);    

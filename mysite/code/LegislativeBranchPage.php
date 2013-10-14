@@ -159,8 +159,8 @@ class LegislativeBranchPage_Controller extends BranchPage_Controller {
         	
         	$Data = array(
                 'AllMeetings' => DataObject::get("Meeting"),
-                'SenateMeetings' => DataObject::get("Meeting", "Type = 'General Senate Meeting'", "Date ASC"),
-                'CommitteeMeetings' => DataObject::get("Meeting", "Type = 'Committee Meeting'", "Date ASC"),
+                'SenateMeetings' => DataObject::get("Meeting", "Type = 'General Senate Meeting'", "Date DESC"),
+                'CommitteeMeetings' => DataObject::get("Meeting", "Type = 'Committee Meeting'", "Date DESC"),
 
             );
             //Staff member not found

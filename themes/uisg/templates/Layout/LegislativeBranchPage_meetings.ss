@@ -3,18 +3,13 @@
 <div id="content"  class="typography padding">
 
 	<div id="content1">
-
-<div id="breadcrumbs">
-		<a href="branches/">Branches</a> &raquo; <a href="branches/legislative">The Legislative Branch</a> <% if Meeting %>	&raquo; <a href="branches/legislative/meetings/">Meetings</a> &raquo; Meeting Notes for <% control Meeting %>$Date.Format(F d)<% end_control %><% end_if %>
-
-	</div>
 	
+	<p><a href="$Link">Back to the Legislative Branch</a></p>
 	<% if Meeting %>
+	<p><a href="{$Link}meetings/">Back to Meetings</a></p>
 		<% control Meeting %>
 			<h1>Meeting Notes for $Date.Format(F d)</h1>
 			$Notes
-			
-			
 		<% end_control %>
 	<% else %>
 		<h1>Meetings</h1>
