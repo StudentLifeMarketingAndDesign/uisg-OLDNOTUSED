@@ -17,7 +17,7 @@ class MeetingPage extends Page {
 	public function getCMSFields()	{
 	
 		$fields = parent::getCMSFields();
-	
+		$fields->removeFieldFromTab('Root.Content.Main', 'Content');
 		$date_field = new DateField("Date");
 		$date_field->setConfig("showcalendar", true);
 	
@@ -43,4 +43,12 @@ class MeetingPage extends Page {
 	}*/
 		
 
+}
+
+class MeetingPage_Controller extends Page_Controller {
+
+   public function init() { 
+      parent::init(); 
+   } 
+    
 }
