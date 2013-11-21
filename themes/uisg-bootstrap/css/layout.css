@@ -198,6 +198,16 @@ td{
 	padding: 10px; 
 }
 
+table.meetings{
+	border-collapse: separate;
+	width: 100%;
+}
+
+table.meetings th {
+	font-size: 1.3em;
+	color: #333;
+}
+
 .typography td a {
 	color: #334371; 
 }

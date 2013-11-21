@@ -25,7 +25,7 @@
 			</div><!-- end container-fluid -->
 		</div><!-- end span7 -->
 		<div class = "span5">
-		<a class="tagline-link" href="branches/legislative/meetings"><span>Meetings</span></a>
+		<a class="tagline-link" href="meetings/"><span>Meetings</span></a>
 		<div class="clear" style="float:right;"></div>
 		<div id="committee-list">
 			<h2>Committees</h2>

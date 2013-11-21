@@ -5,23 +5,37 @@
 	<% control Children %>
 		<h2> $Title </h2>
 			$Content
-		<table id="meetings" class="senate">
+		<table class="meetings">
 			
 				<tr>
 					<th>Meeting Date</th>
-					<th>Meeting Location</th>
+					<th>Available Documents</th>
 				</tr>
-				<% control Children %>
+				<% control Meetings %>
 				<tr class="$EvenOdd">
-					<td><% if Notes %>$Date.Format(F d&#44; Y) $Time<a href="$Link">(meeting notes &raquo;)</a><% else %>
-						$Date.Format(F d&#44; Y) $Time
-						<% end_if %>
+					<td><a href="$Link">$Date.Format(F d&#44; Y) $Time</a>
 					</td>
-					<td>$Location</td>
+					<td>
+						<% if Agenda %>
+							<a href="$Agenda.URL">Agenda</a>, 
+						<% end_if %>
+						<% if MeetingNotes %>
+							<a href="$MeetingNotes.URL">Meeting Minutes</a>, 
+						<% end_if %>
+						<% if Legislation1 %>
+							<a href="$Legislation1.URL">Legislation 1</a>, 
+						<% end_if %>
+						<% if Legislation2 %>
+							<a href="$Legislation2.URL">Legislation 2</a>
+						<% end_if %>
+						
+					</td>
 				</tr>
 				<% end_control %>
 		</table>
+		<hr />
 	<% end_control %>
+	
 	$Form
 </div>
 

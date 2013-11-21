@@ -51,11 +51,11 @@ class LegislativeBranchPage extends BranchPage {
 		);*/
  
 		//$fields->addFieldToTab('Root.Content.Committees', $committeesField);
-		$fields->addFieldToTab('Root.Content.Meetings', $domfield);
+		//$fields->addFieldToTab('Root.Content.Meetings', $domfield);
 
 		//$fields->removeFieldFromTab('Root.Content.Main', 'Content');
-		$fields->addFieldToTab('Root.Content.Meetings', new HTMLEditorField('SenateMeetingsContent','Senate Meetings Content'));
-		$fields->addFieldToTab('Root.Content.Meetings', new HTMLEditorField('CommitteeMeetingsContent','Committee Meetings Content'));
+		//$fields->addFieldToTab('Root.Content.Meetings', new HTMLEditorField('SenateMeetingsContent','Senate Meetings Content'));
+		//$fields->addFieldToTab('Root.Content.Meetings', new HTMLEditorField('CommitteeMeetingsContent','Committee Meetings Content'));
 		//$fields->addFieldToTab('Root.Content.Main', new ImageField('Image','Slider Image'));
 		//$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('Content','Content'));
 
@@ -67,7 +67,7 @@ class LegislativeBranchPage extends BranchPage {
 }
 class LegislativeBranchPage_Controller extends BranchPage_Controller {
 
-	public static $allowed_actions = array ( "meetings", "committee"
+	public static $allowed_actions = array ( "committee"
 	);
 	
 		public function Speaker(){
